@@ -120,31 +120,3 @@ function MouseOnCenterGame () {
     document.getElementById('servise_box_img_rgd').src = center_img_rgd;
     document.getElementById('text_game_rgd').textContent = center_text_rgd; 
 }
-
-function getRandomElement(arr) {
-    let randIndex = Math.floor(Math.random() * arr.length);
-    return arr[randIndex];
-    }
-
-let button_top_rg = document.querySelector('.button_top_rg');
-
-let title_rg = document.querySelector('.title_rg');
-
-let img_rg = document.querySelector('.img_rg');
-
-let text_info_rg = document.querySelector('.text_info_rg');
-
-let img_url_rg = document.querySelector('.img_url_rg');
-
-button_top_rg.addEventListener('click', function() {
-let randomElement = getRandomElement(games_baza);
-
-title_rg.textContent = randomElement.g_name;
-
-img_rg.src = randomElement.g_img;
-
-text_info_rg.textContent = randomElement.g_text;
-
-img_url_rg.href = randomElement.g_url + '?agent=823594';
-
-})
