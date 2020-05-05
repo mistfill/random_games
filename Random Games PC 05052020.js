@@ -131,14 +131,14 @@ let text_info_rg = document.querySelector('.text_info_rg');
 let img_url_rg = document.querySelector('.img_url_rg');
 
 button_top_rg.addEventListener('click', function() {
-let randomElement = getRandomElement(games_baza);
+    let randomElement_rgd = getRandomElement(games_baza);
 
-title_rg.textContent = randomElement.g_name;
+    title_rg.textContent = randomElement_rgd.g_name;
 
-img_rg.src = randomElement.g_img;
+    img_rg.src = randomElement_rgd.g_img;
 
-text_info_rg.textContent = randomElement.g_text;
+    text_info_rg.textContent = randomElement_rgd.g_text;
 
-img_url_rg.href = randomElement.g_url + '?agent=823594';
+    img_url_rg.href = randomElement_rgd.g_url + '?agent=823594';
 
 })
