@@ -1,4 +1,4 @@
-let games_baza_rgd = [
+let games_baza = [
 {g_name:"Grand Theft Auto V" , g_url: "https://steampay.com/game/grand-theft-auto-v" , g_img: "https://steamcdn-a.akamaihd.net/steam/apps/271590/ss_32aa18ab3175e3002217862dd5917646d298ab6b.1920x1080.jpg?t=1586539531" , g_text:"Лос-Сантос – некогда великолепный городок, попасть в который мечтали миллионы. Сегодня он стал просто пристанищем вышедших в тираж звезд. Здесь мало интересных событий и планомерно текущая жизнь." } ,
 {g_name:"PLAYERUNKNOWN'S BATTLEGROUNDS" , g_url: "https://steampay.com/game/playerunknowns-battlegrounds" , g_img: "https://steamcdn-a.akamaihd.net/steam/apps/578080/ss_abadb3bfc951cd05150901ff65386e3129c6011a.1920x1080.jpg?t=1587582005" , g_text:"Убить и только убить! По-другому в этой игре и быть не может, ведь это самая что ни на есть настоящая выживалка, со всеми соответствующими жанру особенностями прохождения. Геймерам не раз придется стоять перед неприятным выбором и сопротивляться голосу совести, чтобы остаться в живых. Но тут уж, как говорится, либо честь, либо победа!" } ,
 {g_name:"Devil May Cry 5" , g_url: "https://steampay.com/game/devil-may-cry-5" , g_img: "https://steamcdn-a.akamaihd.net/steam/apps/601150/ss_4410bada2565843dae693b03ac3a50256ff5dd66.1920x1080.jpg?t=1582605276" , g_text:"Зло никогда не оставит мир в покое. Оно методично продолжает искать способы уничтожить человечество, и вот теперь исчадия ада решили изменить тактику ведения извечной войны." } ,
@@ -70,7 +70,7 @@ function getRandomElement(arr_rgd) {
 
 
 button_next_rgd.addEventListener('click', function() {
-    let randomElement_rgd = getRandomElement(games_baza_rgd);
+    let randomElement_rgd = getRandomElement(games_baza);
 
     left_game_title_rgd.textContent = randomElement_rgd.g_name;
     left_game_img_rgd.src = randomElement_rgd.g_img;
@@ -80,7 +80,7 @@ button_next_rgd.addEventListener('click', function() {
 })
 
 button_next_rgd.addEventListener('click', function() {
-    let randomElement_rgd = getRandomElement(games_baza_rgd);
+    let randomElement_rgd = getRandomElement(games_baza);
 
     center_game_title_rgd.textContent = randomElement_rgd.g_name;
     center_game_img_rgd.src = randomElement_rgd.g_img;
@@ -93,7 +93,7 @@ button_next_rgd.addEventListener('click', function() {
 })
 
 button_next_rgd.addEventListener('click', function() {
-    let randomElement_rgd = getRandomElement(games_baza_rgd);
+    let randomElement_rgd = getRandomElement(games_baza);
 
     right_game_title_rgd.textContent = randomElement_rgd.g_name;
     right_game_img_rgd.src = randomElement_rgd.g_img;
