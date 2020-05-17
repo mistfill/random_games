@@ -68,7 +68,7 @@
     let left2_game_url = '0';
 
     let left_game_new_url = randomElement_left2.g_url;
-    console.log(left_game_new_url)
+    console.log('left_game_new_url' + left_game_new_url)
 
     //переменная 2 блока центр игры - картинка из базы
     let center2_game_box_rgd_img = randomElement_center2.g_img;
