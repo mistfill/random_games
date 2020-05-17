@@ -1,6 +1,6 @@
-    import { games_baza as games_baza } from 'https://mistfill.github.io/random_games/random_baze.js';
+import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
-        //доступ кнопке next
+    //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
     //доступ к тексту игры на заднике
     let text_game_rgd = document.querySelector('.text_game_rgd');
@@ -68,7 +68,7 @@
     let left2_game_url = '0';
 
     let left_game_new_url = randomElement_left2.g_url;
-    console.log('left_game_new_url' + left_game_new_url)
+    console.log(left_game_new_url)
 
     //переменная 2 блока центр игры - картинка из базы
     let center2_game_box_rgd_img = randomElement_center2.g_img;
@@ -190,6 +190,7 @@
 
     //Если блок 1 ряда наверху, left_game1_top = 91px
     function random_g() {
+        import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
         //доступ к левому блоку 1 ряда
         let left_game1 = document.getElementById('left_game_box_rgd');
         let left_game1_z = window.getComputedStyle(left_game1).zIndex;
@@ -202,6 +203,7 @@
         if (left_game2_z == '0') {
         
         function block1_games() {
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
             
             console.log('блок 1 сверху')
 
@@ -217,19 +219,20 @@
             document.getElementById('left2_game_box_rgd').style.opacity = '1';
             //ссылка 2 блока = новой переменной
             left2_game_url = left_game_new_url;
-            //актуальная ссылка
-            left_game_url_rgd.href = left2_game_url + '?agent=823594';
-
-            left_game_new_url = randomElement_rgd.g_url;
-            console.log('left_game_new_url' + left_game_new_url)
 
         setTimeout( function left_game_body(){
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
             //новый титл левого блока 1 ряда
             left_game_title_rgd.textContent = randomElement_rgd.g_name;
             //новая картинка левого блока 1 ряда
             left_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd.g_img + ')';
             //новый текст левого блока 1 ряда
-            left_text_rgd = randomElement_rgd.g_text;}, 500);
+            left_text_rgd = randomElement_rgd.g_text;
+
+            //актуальная ссылка
+            left_game_url_rgd.href = left2_game_url + '?agent=823594';
+
+            left_game_new_url = randomElement_rgd.g_url;}, 500);
 
             let randomElement_rgd2 = getRandomElement(games_baza);
     
@@ -243,13 +246,9 @@
             document.getElementById('center2_game_box_rgd').style.opacity = '1';
             //меняем ссылку блока 2 на новую переменную
             center2_game_url = center_game_new_url;
-            
-            //актуальная ссылка
-            center_game_url_rgd.href = center2_game_url + '?agent=823594';
-
-            center_game_new_url = randomElement_rgd2.g_url;
 
             setTimeout( function center_game_time() {
+                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //видимый текст = тексту невидимого блока
             text_game_rgd.textContent = back_game_text.textContent;
@@ -260,6 +259,11 @@
             center_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd2.g_img + ')';
             //новый текст центр блока 1 ряда
             center_text_rgd = randomElement_rgd2.g_text;
+
+            //актуальная ссылка
+            center_game_url_rgd.href = center2_game_url + '?agent=823594';
+
+            center_game_new_url = randomElement_rgd2.g_url;
         
             //текст задника = текст центр блока 2 ряда
             back_game_text.textContent = center_text_rgd;
@@ -278,26 +282,28 @@
             document.getElementById('right2_game_box_rgd').style.opacity = '1';
             //меняем ссылку 2 блока на новую перменную
             right2_game_url = right_game_new_url;
-            
-                       //новая ссылка правого блока 1 ряда
-            right_game_url_rgd.href = right2_game_url + '?agent=823594';
-
-            right_game_new_url = randomElement_rgd3.g_url;
         
             setTimeout( function right_game_time() {
+                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //новый титл правого блока 1 ряда
             right_game_title_rgd.textContent = randomElement_rgd3.g_name;
             //новая картинка правого блока 1 ряда
             right_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd3.g_img + ')';
             //новый текст правого блока 1 ряда
-            right_text_rgd = randomElement_rgd3.g_text;}, 500);}
+            right_text_rgd = randomElement_rgd3.g_text;
+
+            //новая ссылка правого блока 1 ряда
+            right_game_url_rgd.href = right2_game_url + '?agent=823594';
+
+            right_game_new_url = randomElement_rgd3.g_url;}, 500);}
 
             block1_games();
 
     } else if (left_game1_z == '0') {
 
         function block2_games() {
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 2 сверху')
 
@@ -313,21 +319,21 @@
             document.getElementById('left_game_box_rgd').style.opacity = '1';
             //ссылка 1 блока равная новой переменной 
             left_game_url = left_game_new_url;
-            
-                        //актуальная ссылка
-            left_game_url_rgd.href = left_game_url + '?agent=823594';
-
-            left_game_new_url = randomElement_rgd.g_url;
-            console.log('left_game_new_url' + left_game_new_url)
 
             setTimeout( function left2_game_time() {
+                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //новый титл левого блока 2 ряда
             left2_game_title_rgd.textContent = randomElement_rgd.g_name;
             //новая картинка левого блока 2 ряда
             left2_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd.g_img + ')';
             //новый текст левого блока 2 ряда
-            left2_text_rgd = randomElement_rgd.g_text;}, 500);
+            left2_text_rgd = randomElement_rgd.g_text;
+
+            //актуальная ссылка
+            left_game_url_rgd.href = left_game_url + '?agent=823594';
+
+            left_game_new_url = randomElement_rgd.g_url;}, 500);
 
 
            let randomElement_rgd2 = getRandomElement(games_baza);
@@ -342,13 +348,9 @@
             document.getElementById('center_game_box_rgd').style.opacity = '1';
             //меняем ссылку 1 блока на новую переменную
             center_game_url = center_game_new_url;
-            
-                        //актуальная ссылка
-            center_game_url_rgd.href = center_game_url + '?agent=823594';
-
-            center_game_new_url = randomElement_rgd2.g_url;
 
             setTimeout( function center2_game_time() {
+                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //видимый текст = тексту невидимого блока
             text_game_rgd.textContent = back_game_text.textContent;
@@ -360,7 +362,10 @@
             //новый текст центр блока 2 ряда
             center2_text_rgd = randomElement_rgd2.g_text;
 
+            //актуальная ссылка
+            center_game_url_rgd.href = center_game_url + '?agent=823594';
 
+            center_game_new_url = randomElement_rgd2.g_url;
         
             //текст задника = текст центр блока 2 ряда
             back_game_text.textContent = center2_text_rgd;
@@ -380,21 +385,21 @@
             document.getElementById('right_game_box_rgd').style.opacity = '1';
             //меняем ссылку 1 блока на новую переменную
             right_game_url = right_game_new_url;
-            
-            
-            //актуальная ссылка
-            right_game_url_rgd.href = right_game_url + '?agent=823594';
-
-            right_game_new_url = randomElement_rgd3.g_url;
 
             setTimeout( function right2_game_time() {
+                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
         
             //новый титл правого блока 1 ряда
             right2_game_title_rgd.textContent = randomElement_rgd3.g_name;
             //новая картинка правого блока 1 ряда
             right2_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd3.g_img + ')';
             //новый текст правого блока 1 ряда
-            right2_text_rgd = randomElement_rgd3.g_text;}, 500);
+            right2_text_rgd = randomElement_rgd3.g_text;
+
+            //актуальная ссылка
+            right_game_url_rgd.href = right_game_url + '?agent=823594';
+
+            right_game_new_url = randomElement_rgd3.g_url;}, 500);
 
         }
 
@@ -502,6 +507,7 @@
     if (img_game2_mob_z == '0') {
 
         function block1_mob(){
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 1 сверху')
 
@@ -517,6 +523,7 @@
         url_game_mob.href = url_game2_mob_new + '?agent=823594';
 
         setTimeout ( function first_game_time() {
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         img_game_mob.style.backgroundImage = 'url(' + randomElement_mob.g_img + ')';
         title_game_mob.textContent = randomElement_mob.g_name;
@@ -530,6 +537,7 @@
     } else if (img_game_mob_z == '0') {
 
         function block2_mob(){
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 2 сверху')
 
@@ -545,6 +553,7 @@
         url_game_mob.href = url_game2_mob_new + '?agent=823594';
 
         setTimeout( function second_game_time() {
+            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         img_game2_mob.style.backgroundImage = 'url(' + randomElement_mob.g_img + ')';
         title_game2_mob.textContent = randomElement_mob.g_name;
