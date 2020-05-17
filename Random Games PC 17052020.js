@@ -1,4 +1,7 @@
-import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
+function games_baza() {
+    import {games_baza as games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
+    return games_baza;
+    console.log(games_baza)}
 
     //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
@@ -203,7 +206,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
         if (left_game2_z == '0') {
         
         function block1_games() {
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
             
             console.log('блок 1 сверху')
 
@@ -221,7 +223,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             left2_game_url = left_game_new_url;
 
         setTimeout( function left_game_body(){
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
             //новый титл левого блока 1 ряда
             left_game_title_rgd.textContent = randomElement_rgd.g_name;
             //новая картинка левого блока 1 ряда
@@ -248,7 +249,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             center2_game_url = center_game_new_url;
 
             setTimeout( function center_game_time() {
-                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //видимый текст = тексту невидимого блока
             text_game_rgd.textContent = back_game_text.textContent;
@@ -284,7 +284,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             right2_game_url = right_game_new_url;
         
             setTimeout( function right_game_time() {
-                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //новый титл правого блока 1 ряда
             right_game_title_rgd.textContent = randomElement_rgd3.g_name;
@@ -320,7 +319,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             left_game_url = left_game_new_url;
 
             setTimeout( function left2_game_time() {
-                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //новый титл левого блока 2 ряда
             left2_game_title_rgd.textContent = randomElement_rgd.g_name;
@@ -349,7 +347,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             center_game_url = center_game_new_url;
 
             setTimeout( function center2_game_time() {
-                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
             //видимый текст = тексту невидимого блока
             text_game_rgd.textContent = back_game_text.textContent;
@@ -386,7 +383,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
             right_game_url = right_game_new_url;
 
             setTimeout( function right2_game_time() {
-                import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
         
             //новый титл правого блока 1 ряда
             right2_game_title_rgd.textContent = randomElement_rgd3.g_name;
@@ -521,7 +517,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
         url_game_mob.href = url_game2_mob_new + '?agent=823594';
 
         setTimeout ( function first_game_time() {
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         img_game_mob.style.backgroundImage = 'url(' + randomElement_mob.g_img + ')';
         title_game_mob.textContent = randomElement_mob.g_name;
@@ -550,7 +545,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
         url_game_mob.href = url_game2_mob_new + '?agent=823594';
 
         setTimeout( function second_game_time() {
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         img_game2_mob.style.backgroundImage = 'url(' + randomElement_mob.g_img + ')';
         title_game2_mob.textContent = randomElement_mob.g_name;
