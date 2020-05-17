@@ -1,9 +1,8 @@
-async function g_baze() {
+(async () => {
     let {games_baza} = await import('https://mistfill.github.io/random_games/random_baze3.js'); 
     return games_baza;
-    console.log(game_baza)};
+    console.log(game_baza)})();
 
-g_baze();
 
     //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
