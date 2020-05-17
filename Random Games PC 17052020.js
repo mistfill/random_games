@@ -1,6 +1,7 @@
 async function g_baze() {
     let {games_baza} = await import('https://mistfill.github.io/random_games/random_baze2.js'); 
-    return games_baza;}
+    return games_baza;
+    console.log(game_baza)};
 
 g_baze();
 
