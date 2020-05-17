@@ -1,4 +1,4 @@
-let {games_baza} = await import('https://mistfill.github.io/random_games/random_baze.js');
+let {games_baza} = await import('https://mistfill.github.io/random_games/random_baze2.js');
 
     //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
