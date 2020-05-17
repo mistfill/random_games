@@ -217,6 +217,10 @@
             document.getElementById('left2_game_box_rgd').style.opacity = '1';
             //ссылка 2 блока = новой переменной
             left2_game_url = left_game_new_url;
+            //актуальная ссылка
+            left_game_url_rgd.href = left2_game_url + '?agent=823594';
+
+            left_game_new_url = randomElement_rgd.g_url;
 
         setTimeout( function left_game_body(){
             //новый титл левого блока 1 ряда
@@ -224,12 +228,7 @@
             //новая картинка левого блока 1 ряда
             left_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd.g_img + ')';
             //новый текст левого блока 1 ряда
-            left_text_rgd = randomElement_rgd.g_text;
-
-            //актуальная ссылка
-            left_game_url_rgd.href = left2_game_url + '?agent=823594';
-
-            left_game_new_url = randomElement_rgd.g_url;}, 500);
+            left_text_rgd = randomElement_rgd.g_text;}, 500);
 
             let randomElement_rgd2 = getRandomElement(games_baza);
     
@@ -243,6 +242,11 @@
             document.getElementById('center2_game_box_rgd').style.opacity = '1';
             //меняем ссылку блока 2 на новую переменную
             center2_game_url = center_game_new_url;
+            
+            //актуальная ссылка
+            center_game_url_rgd.href = center2_game_url + '?agent=823594';
+
+            center_game_new_url = randomElement_rgd2.g_url;
 
             setTimeout( function center_game_time() {
 
@@ -255,11 +259,6 @@
             center_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd2.g_img + ')';
             //новый текст центр блока 1 ряда
             center_text_rgd = randomElement_rgd2.g_text;
-
-            //актуальная ссылка
-            center_game_url_rgd.href = center2_game_url + '?agent=823594';
-
-            center_game_new_url = randomElement_rgd2.g_url;
         
             //текст задника = текст центр блока 2 ряда
             back_game_text.textContent = center_text_rgd;
@@ -278,6 +277,11 @@
             document.getElementById('right2_game_box_rgd').style.opacity = '1';
             //меняем ссылку 2 блока на новую перменную
             right2_game_url = right_game_new_url;
+            
+                       //новая ссылка правого блока 1 ряда
+            right_game_url_rgd.href = right2_game_url + '?agent=823594';
+
+            right_game_new_url = randomElement_rgd3.g_url;
         
             setTimeout( function right_game_time() {
 
@@ -286,12 +290,7 @@
             //новая картинка правого блока 1 ряда
             right_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd3.g_img + ')';
             //новый текст правого блока 1 ряда
-            right_text_rgd = randomElement_rgd3.g_text;
-
-            //новая ссылка правого блока 1 ряда
-            right_game_url_rgd.href = right2_game_url + '?agent=823594';
-
-            right_game_new_url = randomElement_rgd3.g_url;}, 500);}
+            right_text_rgd = randomElement_rgd3.g_text;}, 500);}
 
             block1_games();
 
@@ -313,6 +312,11 @@
             document.getElementById('left_game_box_rgd').style.opacity = '1';
             //ссылка 1 блока равная новой переменной 
             left_game_url = left_game_new_url;
+            
+                        //актуальная ссылка
+            left_game_url_rgd.href = left_game_url + '?agent=823594';
+
+            left_game_new_url = randomElement_rgd.g_url;
 
             setTimeout( function left2_game_time() {
 
@@ -321,12 +325,7 @@
             //новая картинка левого блока 2 ряда
             left2_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd.g_img + ')';
             //новый текст левого блока 2 ряда
-            left2_text_rgd = randomElement_rgd.g_text;
-
-            //актуальная ссылка
-            left_game_url_rgd.href = left_game_url + '?agent=823594';
-
-            left_game_new_url = randomElement_rgd.g_url;}, 500);
+            left2_text_rgd = randomElement_rgd.g_text;}, 500);
 
 
            let randomElement_rgd2 = getRandomElement(games_baza);
@@ -341,6 +340,11 @@
             document.getElementById('center_game_box_rgd').style.opacity = '1';
             //меняем ссылку 1 блока на новую переменную
             center_game_url = center_game_new_url;
+            
+                        //актуальная ссылка
+            center_game_url_rgd.href = center_game_url + '?agent=823594';
+
+            center_game_new_url = randomElement_rgd2.g_url;
 
             setTimeout( function center2_game_time() {
 
@@ -354,10 +358,7 @@
             //новый текст центр блока 2 ряда
             center2_text_rgd = randomElement_rgd2.g_text;
 
-            //актуальная ссылка
-            center_game_url_rgd.href = center_game_url + '?agent=823594';
 
-            center_game_new_url = randomElement_rgd2.g_url;
         
             //текст задника = текст центр блока 2 ряда
             back_game_text.textContent = center2_text_rgd;
@@ -377,6 +378,12 @@
             document.getElementById('right_game_box_rgd').style.opacity = '1';
             //меняем ссылку 1 блока на новую переменную
             right_game_url = right_game_new_url;
+            
+            
+            //актуальная ссылка
+            right_game_url_rgd.href = right_game_url + '?agent=823594';
+
+            right_game_new_url = randomElement_rgd3.g_url;
 
             setTimeout( function right2_game_time() {
         
@@ -385,12 +392,7 @@
             //новая картинка правого блока 1 ряда
             right2_game_box_rgd.style.backgroundImage = 'url(' + randomElement_rgd3.g_img + ')';
             //новый текст правого блока 1 ряда
-            right2_text_rgd = randomElement_rgd3.g_text;
-
-            //актуальная ссылка
-            right_game_url_rgd.href = right_game_url + '?agent=823594';
-
-            right_game_new_url = randomElement_rgd3.g_url;}, 500);
+            right2_text_rgd = randomElement_rgd3.g_text;}, 500);
 
         }
 
