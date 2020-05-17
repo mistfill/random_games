@@ -1,4 +1,4 @@
-     const{games_baza} = require('https://mistfill.github.io/random_games/games_baza1.js');
+    import {games_baza} frome "https://mistfill.github.io/random_games/random_baze.js"
 
         //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
