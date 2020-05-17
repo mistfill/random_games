@@ -190,7 +190,7 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
 
     //Если блок 1 ряда наверху, left_game1_top = 91px
     function random_g() {
-        import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
+       
         //доступ к левому блоку 1 ряда
         let left_game1 = document.getElementById('left_game_box_rgd');
         let left_game1_z = window.getComputedStyle(left_game1).zIndex;
@@ -303,7 +303,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
     } else if (left_game1_z == '0') {
 
         function block2_games() {
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 2 сверху')
 
@@ -507,7 +506,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
     if (img_game2_mob_z == '0') {
 
         function block1_mob(){
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 1 сверху')
 
@@ -537,7 +535,6 @@ import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js
     } else if (img_game_mob_z == '0') {
 
         function block2_mob(){
-            import {games_baza} from "https://mistfill.github.io/random_games/random_baze.js";
 
         console.log('блок 2 сверху')
 
