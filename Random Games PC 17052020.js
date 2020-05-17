@@ -3,6 +3,8 @@ function games_baza() {
     return games_baza;
     console.log(games_baza)}
 
+games_baza();
+
     //доступ кнопке next
     let button_next_rgd = document.querySelector('.button_next_rgd');
     //доступ к тексту игры на заднике
