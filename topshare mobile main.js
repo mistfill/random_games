@@ -59,7 +59,7 @@ news_info.onload = function(){
             all_news.push(newsBox)
             }
             catch{
-                imgNews = 'pattern_11.png';
+                imgNews = 'https://static.tildacdn.com/tild3861-3162-4737-b130-646566633639/pattern_11.png';
                 //console.log('изображения нет')
                 newsBox.push(titleNews, linkNews, category1News, imgNews);
                 //console.log(newsBox)
