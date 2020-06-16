@@ -120,7 +120,7 @@ news_info.onload = function(){
             lifeBox +=1;
         }
         else if(cat == "Видео Главная" && videoBox<6){
-            console.log(cat)
+            //console.log(cat)
             //меняем название
             let changedNews = document.getElementById('title_video' + videoBox); //стучим в Титл новости
             changedNews.textContent = news[0]; //Титл новости равен Титлу из RSS
