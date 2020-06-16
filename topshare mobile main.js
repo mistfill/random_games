@@ -13,8 +13,8 @@ news_info.onload = function(){
     } 
     else {
         let news_resp = news_info.responseXML;
-        console.log(news_resp)
-        console.log(typeof news_resp)
+        //console.log(news_resp)
+        //console.log(typeof news_resp)
 
         let news_id = 0;
         let all_news_id = [];
@@ -70,7 +70,7 @@ news_info.onload = function(){
         });
         
     }
-    console.log(all_news)
+    //console.log(all_news)
 
     let oneNewsId = 1;
 
@@ -82,13 +82,13 @@ news_info.onload = function(){
     let otherBoxLenght = 6;
 
     all_news.forEach(news => {
-        console.log(news)
-        console.log(oneNewsId)
+        //console.log(news)
+        //console.log(oneNewsId)
 
         let cat = news[2];
 
         if(cat == "Новости Главная" && newsBox1<11){
-            console.log(cat)
+            //console.log(cat)
             //меняем название
             let changedNews = document.getElementById('title_game_news' + newsBox1); //стучим в Титл новости
             changedNews.textContent = news[0]; //Титл новости равен Титлу из RSS
@@ -104,7 +104,7 @@ news_info.onload = function(){
             newsBox1 +=1;
         }
         else if(cat == "Топ Главная" && lifeBox<6){
-            console.log(cat)
+            //console.log(cat)
             //меняем название
             let changedNews = document.getElementById('title_life' + lifeBox); //стучим в Титл новости
             changedNews.textContent = news[0]; //Титл новости равен Титлу из RSS
@@ -136,7 +136,7 @@ news_info.onload = function(){
             videoBox +=1;
         }
         else if(cat == "Видео Страница" && videoBox<6){
-            console.log(cat)
+            //console.log(cat)
             //меняем название
             let changedNews = document.getElementById('title_video' + videoBox); //стучим в Титл новости
             changedNews.textContent = news[0]; //Титл новости равен Титлу из RSS
