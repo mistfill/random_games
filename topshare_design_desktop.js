@@ -1,3 +1,15 @@
+
+function hide_body_download(){
+    let body_download = document.getElementById('body_download');
+
+    body_download.style.opacity = 0;
+    body_download.style.zIndex = 0;
+    
+    console.log('Убиралка работает')
+}
+    setTimeout(hide_body_download, 2000);
+console.log('Убиралка подключилась')
+
 let news_info = new XMLHttpRequest();
 
 news_info.open('GET', 'https://topshare.news/rss-feed-172569344805.xml');
@@ -360,11 +372,3 @@ setInterval(() => {
     console.log("Смена обложек запущена")
     nextLifeDesktop();
 }, 4000);
-
-function hide_body_download(){
-    let body_download = document.getElementById('body_download');
-
-    body_download.style.opacity = 0;
-    body_download.style.zIndex = 0;
-}
-    setTimeout(hide_body_download, 2000);
