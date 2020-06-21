@@ -1,16 +1,3 @@
-
-function hide_body_download(){
-    let body_download = document.getElementById('body_download');
-
-    body_download.style.opacity = 0;
-    body_download.style.zIndex = 0;
-    body_download.style.top = -5000;
-    
-    console.log('Убиралка работает')
-}
-    setTimeout(hide_body_download, 2000);
-console.log('Убиралка подключилась')
-
 (async () => {
     let {games_baza} = await import('https://mistfill.github.io/random_games/random_baze3.js'); 
     return games_baza;
