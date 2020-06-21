@@ -360,3 +360,11 @@ setInterval(() => {
     console.log("Смена обложек запущена")
     nextLifeDesktop();
 }, 4000);
+
+function hide_body_download(){
+    let body_download = document.getElementById('body_download');
+
+    body_download.style.opacity = 0;
+    body_download.style.zIndex = 0;
+}
+    setTimeout(hide_body_download, 2000);
