@@ -7,6 +7,7 @@ function hide_body_download(){
     body_download.style.height = '.1vh';
     
     console.log('Убиралка работает')
+    console.log('Делаем 1 пиксель')
 }
     setTimeout(hide_body_download, 2000);
 console.log('Убиралка подключилась')
