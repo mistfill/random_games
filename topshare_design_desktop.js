@@ -2,7 +2,7 @@
 function hide_body_download(){
     let body_download = document.getElementById('body_download');
 
-    body_download.style.opacity = 0;
+    //body_download.style.opacity = 0;
     body_download.style.zIndex = 0;
     body_download.style.height = '1vh';
     body_download.style.width = '1vw';
