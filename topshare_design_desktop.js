@@ -2,10 +2,17 @@
 function hide_body_download(){
     let obl_body_download = document.getElementById('obl_body_download');
     
-    let 
+    let body_download = document.getElementById('body_download');
+    
+    let logo_download = document.getElementById('logo_download');
+    
+    let load_download = document.getElementById('load_download');
 
     //body_download.style.opacity = 0;
     obl_body_download.style.zIndex = 0;
+    body_download.style.zIndex = 0;
+    logo_download.style.zIndex = 0;
+    load_download.style.zIndex = 0;
     obl_body_download.style.height = '1vh';
     obl_body_download.style.width = '1vw';
     
