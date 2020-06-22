@@ -95,7 +95,7 @@ news_info.onload = function(){
         
     };
 
-    console.log(all_news)
+    //console.log(all_news)
 
     let oneNewsId = 1;
 
@@ -134,7 +134,7 @@ news_info.onload = function(){
             //console.log(LifeLinks)
 
             SomeImgDesktop.push(news[3]);
-            console.log(SomeImgDesktop)
+            //console.log(SomeImgDesktop)
 
             let life_but_desktop = document.querySelector('.life_but_desktop');
             life_but_desktop.href = LifeLinks[0];
@@ -178,8 +178,8 @@ news_info.onload = function(){
     return LifeLinks, SomeImgDesktop;
 }
 
-console.log(LifeLinks)
-console.log(SomeImgDesktop)
+//console.log(LifeLinks)
+//console.log(SomeImgDesktop)
 
 let LifeDesktop1 = document.getElementById('life_box_desktop1');//первый слайд
 LifeZ1 = 1;
@@ -191,13 +191,13 @@ let LifeDesktop4 = document.getElementById('life_box_desktop4');//четверт
 LifeZ4 = 0;
 let LifeDesktop5 = document.getElementById('life_box_desktop5');//пятый слайд
 LifeZ5 = 0;
-console.log('Подключили кнопки')
+//console.log('Подключили кнопки')
 
 
 
 
 function nextLifeDesktop(){//листать вперед
-    console.log(SomeImgDesktop[0])
+    //console.log(SomeImgDesktop[0])
 
     let LifeDesktop1 = document.getElementById('life_box_desktop1');//первый слайд
     let LifeDesktop2 = document.getElementById('life_box_desktop2');//второй слайд
@@ -223,12 +223,12 @@ function nextLifeDesktop(){//листать вперед
         LifeT1.textContent = LifeT2.textContent;
 
         life_but_desktop.href = LifeLinks[1];
-        console.log(LifeLinks[1])
+        //console.log(LifeLinks[1])
 
         LifeZ1 = 0;
         LifeZ2 = 1;
 
-        console.log('Второ блок индекс = ' + LifeDesktop2.style.zIndex)
+        //console.log('Второ блок индекс = ' + LifeDesktop2.style.zIndex)
     }
     else if(LifeZ2 > 0){
         console.log('Life2 сверху')
@@ -237,12 +237,12 @@ function nextLifeDesktop(){//листать вперед
         LifeT1.textContent = LifeT3.textContent;
 
         life_but_desktop.href = LifeLinks[2];
-        console.log(LifeLinks[2])
+        //console.log(LifeLinks[2])
 
         LifeZ2 = 0;
         LifeZ3 = 1;
 
-        console.log('Третий блок индекс = ' + LifeDesktop3.style.zIndex)
+        //console.log('Третий блок индекс = ' + LifeDesktop3.style.zIndex)
     }
     else if(LifeZ3 > 0){
         console.log('Life3 сверху')
@@ -251,12 +251,12 @@ function nextLifeDesktop(){//листать вперед
         LifeT1.textContent = LifeT4.textContent;
 
         life_but_desktop.href = LifeLinks[3];
-        console.log(LifeLinks[3])
+        //console.log(LifeLinks[3])
 
         LifeZ3 = 0;
         LifeZ4 = 1;
 
-        console.log('Четвертый блок индекс = ' + LifeDesktop4.style.zIndex)
+        //console.log('Четвертый блок индекс = ' + LifeDesktop4.style.zIndex)
     }
     else if(LifeZ4 > 0){
         console.log('Life4 сверху')
@@ -265,12 +265,12 @@ function nextLifeDesktop(){//листать вперед
         LifeT1.textContent = LifeT5.textContent;
 
         life_but_desktop.href = LifeLinks[4];
-        console.log(LifeLinks[4])
+        //console.log(LifeLinks[4])
 
         LifeZ4 = 0;
         LifeZ5 = 1;
 
-        console.log('Пятый блок индекс = ' + LifeDesktop5.style.zIndex)
+        //console.log('Пятый блок индекс = ' + LifeDesktop5.style.zIndex)
     }
     else if(LifeZ5 > 0){
         console.log('Life5 сверху')
@@ -279,12 +279,12 @@ function nextLifeDesktop(){//листать вперед
         LifeT1.textContent = LifeT.textContent;
 
         life_but_desktop.href = LifeLinks[0];
-        console.log(LifeLinks[5])
+        //console.log(LifeLinks[5])
 
         LifeZ5 = 0;
         LifeZ1 = 1;
 
-        console.log('Первый блок индекс = ' + LifeDesktop1.style.zIndex)
+        //console.log('Первый блок индекс = ' + LifeDesktop1.style.zIndex)
     }
 }
 
@@ -303,7 +303,7 @@ function preLifeDesktop(){ //обратный порядок
     let LifeT5 = document.querySelector('.life_title_news_desktop5');
 
     if(LifeZ1 > 0){
-        console.log('Life1 сверху')
+        //console.log('Life1 сверху')
         LifeDesktop1.style.backgroundImage = LifeDesktop5.style.backgroundImage;
 
         LifeT.textContent = LifeT1.textContent;//Сохраняем первый заг
@@ -314,10 +314,10 @@ function preLifeDesktop(){ //обратный порядок
         LifeZ1 = 0;
         LifeZ5 = 1;
 
-        console.log('Второ блок индекс = ' + LifeDesktop2.style.zIndex)
+        //console.log('Второ блок индекс = ' + LifeDesktop2.style.zIndex)
     }
     else if(LifeZ5 > 0){
-        console.log('Life5 сверху')
+        //console.log('Life5 сверху')
         LifeDesktop1.style.backgroundImage = LifeDesktop4.style.backgroundImage;
 
         LifeT1.textContent = LifeT4.textContent;
@@ -327,7 +327,7 @@ function preLifeDesktop(){ //обратный порядок
         LifeZ5 = 0;
         LifeZ4 = 1;
 
-        console.log('Первый блок индекс = ' + LifeDesktop1.style.zIndex)
+        //console.log('Первый блок индекс = ' + LifeDesktop1.style.zIndex)
     }
     else if(LifeZ4 > 0){
         console.log('Life4 сверху')
@@ -340,10 +340,10 @@ function preLifeDesktop(){ //обратный порядок
         LifeZ4 = 0;
         LifeZ3 = 1;
 
-        console.log('Пятый блок индекс = ' + LifeDesktop5.style.zIndex)
+        //console.log('Пятый блок индекс = ' + LifeDesktop5.style.zIndex)
     }
     else if(LifeZ3 > 0){
-        console.log('Life3 сверху')
+        //console.log('Life3 сверху')
         LifeDesktop1.style.backgroundImage = LifeDesktop2.style.backgroundImage;
 
         LifeT1.textContent = LifeT2.textContent;
@@ -353,10 +353,10 @@ function preLifeDesktop(){ //обратный порядок
         LifeZ3 = 0;
         LifeZ2 = 1;
 
-        console.log('Четвертый блок индекс = ' + LifeDesktop4.style.zIndex)
+        //console.log('Четвертый блок индекс = ' + LifeDesktop4.style.zIndex)
     }
     else if(LifeZ2 > 0){
-        console.log('Life2 сверху')
+        //console.log('Life2 сверху')
         LifeDesktop1.style.backgroundImage = 'url(' + SomeImgDesktop[0] + ')';
 
         LifeT1.textContent = LifeT.textContent;
@@ -366,11 +366,11 @@ function preLifeDesktop(){ //обратный порядок
         LifeZ2 = 0;
         LifeZ1 = 1;
 
-        console.log('Третий блок индекс = ' + LifeDesktop3.style.zIndex)
+        //console.log('Третий блок индекс = ' + LifeDesktop3.style.zIndex)
     }
 }
 
 setInterval(() => {
-    console.log("Смена обложек запущена")
+    //console.log("Смена обложек запущена")
     nextLifeDesktop();
 }, 4000);
