@@ -4,7 +4,7 @@ function hide_body_download(){
 
     body_download.style.opacity = 0;
     body_download.style.zIndex = 0;
-    body_download.style.top = -5000;
+    body_download.style.height = '.1vh';
     
     console.log('Убиралка работает')
 }
