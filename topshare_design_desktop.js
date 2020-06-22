@@ -7,6 +7,9 @@ function hide_body_download(){
     body_download.style.height = '1vh';
     body_download.style.width = '1vw';
     
+    body_download.style.top = '-9999px';
+    body_download.style.left = '-9999px';
+    
     console.log('Убиралка работает')
     console.log('Делаем 1 пиксель')
 }
