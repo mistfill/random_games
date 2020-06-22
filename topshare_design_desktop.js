@@ -4,7 +4,8 @@ function hide_body_download(){
 
     body_download.style.opacity = 0;
     body_download.style.zIndex = 0;
-    body_download.style.height = '.1vh';
+    body_download.style.height = '1vh';
+    body_download.style.width = '1vw';
     
     console.log('Убиралка работает')
     console.log('Делаем 1 пиксель')
