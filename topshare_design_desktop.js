@@ -1,14 +1,16 @@
 
 function hide_body_download(){
-    let body_download = document.getElementById('body_download');
+    let obl_body_download = document.getElementById('obl_body_download');
+    
+    let 
 
     //body_download.style.opacity = 0;
-    body_download.style.zIndex = 0;
-    body_download.style.height = '1vh';
-    body_download.style.width = '1vw';
+    obl_body_download.style.zIndex = 0;
+    obl_body_download.style.height = '1vh';
+    obl_body_download.style.width = '1vw';
     
-    body_download.style.top = '-9999px';
-    body_download.style.left = '-9999px';
+    obl_body_download.style.top = '-9999px';
+    obl_body_download.style.left = '-9999px';
     
     console.log('Убиралка работает')
     console.log('Делаем 1 пиксель')
