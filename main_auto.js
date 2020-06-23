@@ -29,7 +29,7 @@ news_info_desk.onload = function(){
         let news_id = 0;
         let all_news_id = [];
 
-        while(news_id < 150){
+        while(news_id < 200){
             all_news_id.push(news_id);
             news_id += 1;
         }
@@ -294,7 +294,7 @@ news_info.onload = function(){
         let news_id = 0;
         let all_news_id = [];
 
-        while(news_id < 100){
+        while(news_id < 200){
             all_news_id.push(news_id);
             news_id += 1;
         }
