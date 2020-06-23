@@ -1,29 +1,3 @@
-function hide_body_download(){
-    let obl_body_download = document.getElementById('obl_body_download');
-    
-    let body_download = document.getElementById('body_download');
-    
-    let logo_download = document.getElementById('logo_download');
-    
-    let load_download = document.getElementById('load_download');
-
-    //body_download.style.opacity = 0;
-    obl_body_download.style.zIndex = 0;
-    body_download.style.zIndex = 0;
-    logo_download.style.zIndex = 0;
-    load_download.style.zIndex = 0;
-    obl_body_download.style.height = '1vh';
-    obl_body_download.style.width = '1vw';
-    
-    obl_body_download.style.top = '-9999px';
-    obl_body_download.style.left = '-9999px';
-    
-    console.log('Убиралка работает')
-    console.log('Делаем 1 пиксель')
-}
-    setTimeout(hide_body_download, 2000);
-console.log('Убиралка подключилась')
-
 let news_info = new XMLHttpRequest();
 
 news_info.open('GET', 'https://topshare.news/rss-feed-172569344805.xml');
@@ -182,3 +156,30 @@ news_info.onload = function(){
     });
     
 }
+
+
+function hide_body_download(){
+    let obl_body_download = document.getElementById('obl_body_download');
+    
+    let body_download = document.getElementById('body_download');
+    
+    let logo_download = document.getElementById('logo_download');
+    
+    let load_download = document.getElementById('load_download');
+
+    //body_download.style.opacity = 0;
+    obl_body_download.style.zIndex = 0;
+    body_download.style.zIndex = 0;
+    logo_download.style.zIndex = 0;
+    load_download.style.zIndex = 0;
+    obl_body_download.style.height = '1vh';
+    obl_body_download.style.width = '1vw';
+    
+    obl_body_download.style.top = '-9999px';
+    obl_body_download.style.left = '-9999px';
+    
+    console.log('Убиралка работает')
+    console.log('Делаем 1 пиксель')
+}
+    setTimeout(hide_body_download, 2000);
+console.log('Убиралка подключилась')
