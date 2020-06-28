@@ -212,6 +212,7 @@
     font-style: medium;
     font-weight: 500;
     font-size: 18px;
+    text-align: left;
 
     color: #FFFFFF;
 }
@@ -229,6 +230,7 @@
     font-style: medium;
     font-weight: 500;
     font-size: 18px;
+    text-align: left;
 
     color: #FFFFFF;
 }
@@ -246,6 +248,7 @@
     font-style: medium;
     font-weight: 500;
     font-size: 18px;
+    text-align: left;
 
     color: #FFFFFF;
 }
@@ -353,6 +356,7 @@
     font-style: bold;
     font-weight: 500;
     font-size: 38px;
+    text-align: left;
     
     left: 3.44vw;
     top: 37.96vh;
@@ -556,6 +560,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    text-align: left;
 
     color: white;
 
@@ -572,6 +577,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    text-align: left;
 
     color: white;
 
@@ -588,6 +594,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    text-align: left;
 
     color: white;
 
