@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body_all {
+    display: flex;
+
+    width: 100%;
+    height: 90vh;
+}
+
+.body_mobile {
+    width: 100%;
+    height: 90vh;
+
+    /*background-color: lavender;*/
+
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_news1 {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 30vh;
+
+    /*background-color: lightblue;*/
+
+    margin: auto;
+}
+
+.mobile_news1:hover .mobile_black_box1 {
+    opacity: .2;
+}
+
+.mobile_news1:hover .mobile_new_img1 {
+    transform: scale(1.05);
+}
+
+.mobile_news2 {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 30vh;
+
+    background-color: rgb(229, 230, 173);
+
+    margin: auto;
+}
+
+.mobile_news2:hover .mobile_black_box2 {
+    opacity: .2;
+}
+
+.mobile_news2:hover .mobile_new_img2 {
+    transform: scale(1.05);
+}
+
+.mobile_news3 {
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 30vh;
+
+    background-color: rgb(175, 230, 173);
+
+    margin: auto;
+
+    display: flex;
+}
+
+.mobile_news3:hover .mobile_black_box3 {
+    opacity: .2;
+}
+
+.mobile_news3:hover .mobile_new_img3 {
+    transform: scale(1.05);
+}
+
+.mobile_new_img1 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+
+    transition: .5s ease;
+}
+
+.mobile_new_img2 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+
+    transition: .5s ease;
+}
+
+.mobile_new_img3 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top: 0;
+
+    transition: .5s ease;
+}
+
+.mobile_black_box1 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    top: 0;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.mobile_black_box2 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    top: 0;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.mobile_black_box3 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    top: 0;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.mobile_logo_youtube {
+    position: absolute;
+
+    width: 12.22vw;
+    height: 4.52vh;
+
+    background-image: url('https://thumb.tildacdn.com/tild6163-6530-4963-a463-633065633332/-/format/webp/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    left: 5.28vw;
+    top: 9.53vh;
+}
+
+.mobile_new_title1 {
+    position: absolute;
+
+    width: 89.44vw;
+    height: 10.94vh;
+
+    left: 5.28vw;
+    top: 17.19vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #FFFFFF;
+}
+
+.mobile_new_title2 {
+    position: absolute;
+
+    width: 89.44vw;
+    height: 10.94vh;
+
+    left: 5.28vw;
+    top: 17.19vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #FFFFFF;
+}
+
+.mobile_new_title3 {
+    position: absolute;
+
+    width: 89.44vw;
+    height: 10.94vh;
+
+    left: 5.28vw;
+    top: 17.19vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #FFFFFF;
+}
+
+.body_desktop {
+    width: 100%;
+    height: 130vh;
+
+    background-color: lavender;
+
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.first_box_desktop {
+    position: relative;
+
+    width: 100%;
+    height: 64.81vh;
+
+    background-color: cadetblue;
+
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.first_box_desktop:hover .desktop_news_img1 {
+    transform: scale(1.03);
+}
+
+.first_box_desktop:hover .desktop_black_box1 {
+    opacity: .2;
+}
+
+.second_box_desktop {
+    width: 100%;
+    height: 65vh;
+    
+    display: flex;
+    flex-direction: row;
+
+    /*background-color: darkorange;*/
+
+    margin: 0;
+
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.desktop_news_img1 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('/Users/maksimsalnikov/Library/Mobile Documents/com~apple~CloudDocs/Topshare_News_Design_Desctop/Шапка для сайта/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s ease;
+}
+
+.desktop_black_box1 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.desktop_youtube_logo1 {
+    position: absolute;
+
+    width: 7.71vw;
+    height: 9.26vh;
+
+    background-image: url('https://thumb.tildacdn.com/tild6163-6530-4963-a463-633065633332/-/format/webp/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    left: 3.44vw;
+    top: 23.15vh;
+}
+
+.desktop_news_title1 {
+    position: absolute;
+
+    width: 54.48vw;
+    height: 26.85vh;
+
+    color: white;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 38px;
+    
+    left: 3.44vw;
+    top: 37.96vh;
+}
+
+.desktop_news_box1 {
+    position: relative;
+
+    width: 33.33vw;
+    height: 65vh;
+
+    /*background-color: yellow;*/
+
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.desktop_news_box1:hover .desktop_black_box2 {
+    opacity: .2;
+}
+
+.desktop_news_box1:hover .desktop_news_img2 {
+    transform: scale(1.03);
+}
+
+.desktop_news_box2 {
+    position: relative;
+
+    width: 33.33vw;
+    height: 65vh;
+
+    /*background-color: rgb(0, 255, 64);*/
+
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.desktop_news_box2:hover .desktop_black_box3 {
+    opacity: .2;
+}
+
+.desktop_news_box2:hover .desktop_news_img3 {
+    transform: scale(1.03);
+}
+
+.desktop_news_box3 {
+    position: relative;
+
+    width: 33.33vw;
+    height: 65vh;
+
+    /*background-color: rgb(0, 47, 255);*/
+
+    margin: auto;
+
+    overflow: hidden;
+}
+
+.desktop_news_box3:hover .desktop_black_box4 {
+    opacity: .2;
+}
+
+.desktop_news_box3:hover .desktop_news_img4 {
+    transform: scale(1.03);
+}
+
+.desktop_news_img2 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s ease;
+}
+
+.desktop_news_img3 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s ease;
+}
+
+.desktop_news_img4 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-image: url('https://thumb.tildacdn.com/tild3861-3162-4737-b130-646566633639/-/format/webp/pattern_11.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s ease;
+}
+
+.desktop_black_box2 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.desktop_black_box3 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.desktop_black_box4 {
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+
+    background-color: black;
+
+    opacity: .3;
+
+    transition: .3s ease;
+}
+
+.desktop_youtube_logo2 {
+    position: absolute;
+
+    width: 5.16vw;
+    height: 6.20vh;
+
+    background-image: url('https://thumb.tildacdn.com/tild6163-6530-4963-a463-633065633332/-/format/webp/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    left: 3.44vw;
+    top: 23.06vh;
+}
+
+.desktop_youtube_logo3 {
+    position: absolute;
+
+    width: 5.16vw;
+    height: 6.20vh;
+
+    background-image: url('https://thumb.tildacdn.com/tild6163-6530-4963-a463-633065633332/-/format/webp/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    left: 3.44vw;
+    top: 23.06vh;
+}
+
+.desktop_youtube_logo4 {
+    position: absolute;
+
+    width: 5.16vw;
+    height: 6.20vh;
+
+    background-image: url('https://thumb.tildacdn.com/tild6163-6530-4963-a463-633065633332/-/format/webp/youtube.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    left: 3.44vw;
+    top: 23.06vh;
+}
+
+.desktop_news_title2 {
+    position: absolute;
+
+    width: 26.46vw;
+    height: 32.41vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    color: white;
+
+    left: 3.44vw;
+    top: 32.31vh;
+}
+
+.desktop_news_title3 {
+    position: absolute;
+
+    width: 26.46vw;
+    height: 32.41vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    color: white;
+
+    left: 3.44vw;
+    top: 32.31vh;
+}
+
+.desktop_news_title4 {
+    position: absolute;
+
+    width: 26.46vw;
+    height: 32.41vh;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+
+    color: white;
+
+    left: 3.44vw;
+    top: 32.31vh;
+}
+
+@media (max-width: 900px) {
+    .body_desktop {
+        display: none;
+        height: 0;
+    }
+
+    .body_all {
+        height: 90vh;
+    }
+}
+
+@media (min-width: 900px) {
+    .body_mobile {
+        display: none;
+        height: 0;
+    }
+
+    .body_all {
+        height: 130vh;
+    }
+}
