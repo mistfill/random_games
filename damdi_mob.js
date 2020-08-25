@@ -20,7 +20,7 @@ console.log('Start')
 
 let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.com/tild3032-3861-4935-a332-383566353361/-/format/webp/gold.jpg", restPRICE: "Средний чек: 1500-3500тг", restKITCH: "Кухни: паназиатская, американская, европейская, восточная, китайская", restTIME: "Время работы: 11:00 до 02:00", restADRES: "Мкр. Жетысу 2 дом 11", restINSTA: "https://www.instagram.com/cafegold_kz/", rest2GIS: "https://go.2gis.com/qo6gme"},
 {id: 2, restNAME: "BubbleGum", restIMG: "https://thumb.tildacdn.com/tild3338-6461-4335-b665-316133333730/-/format/webp/BubbleGum.jpg", restPRICE: "Средний чек: 4000–7000тг", restKITCH: "Кухни: европейская, восточная", restTIME: "Время работы: 10:00 до 22:00", restADRES: "ПерекуCity Mixx 3 этаж, ул. Шевченко, 99, уг. ул. Байтурсынова", restINSTA: "https://www.instagram.com/bubblegum_cafe/", rest2GIS: "https://go.2gis.com/t8fxh"},
-{id: 3, restNAME: "Чачапури", restIMG: "https://thumb.tildacdn.com/tild3633-3234-4532-b166-303337363730/-/format/webp/photo.jpeg", restPRICE: "Средний чек: 3500–5000тг", restKITCH: "Кухни: европейская, грузинская, восточная, кавказская", restTIME: "Время работы: 11:00 до 22:00", restADRES: "Богенбай батыра уг. ул.Кастеева", restINSTA: "https://www.instagram.com/chachapuri_almaty/", rest2GIS: "https://go.2gis.com/dp13r"},
+{id: 3, restNAME: "Чачапури", restIMG: "https://thumb.tildacdn.com/tild3633-3234-4532-b166-303337363730/-/format/webp/photo.jpeg", restPRICE: "Средний чек: 3500–5000тг", restKITCH: "Кухни: европейская, грузинская, восточная, кавказская", restTIME: "Время работы: 11:00 до 22:00", restADRES: "Богенбай батыра уг. ул.Кастеева", restINSTA: "https://www.instagram.com/chachapuri_almaty/", rest2GIS: "https://go.2gis.com/dp13r"},
 {id: 4, restNAME: "BAYSAN", restIMG: "https://static.tildacdn.com/tild6330-3534-4631-a439-396434336138/photo_2020-08-20_142.jpeg", restPRICE: "Средний чек: 2000–5000 тенге", restKITCH: "Кухни: европейская, восточная", restTIME: "Время работы: 09:00-23:00", restADRES: "ул. Тургут Озала, 249 А", restINSTA: "https://www.instagram.com/baysankz/", rest2GIS: "https://go.2gis.com/bvbypc"},
 {id: 5, restNAME: "Малибу", restIMG: "https://static.tildacdn.com/tild6236-6432-4934-b932-366330313735/photo_2020-08-20_142.jpeg", restPRICE: "Средний чек: 5000–8000 тенге", restKITCH: "Кухни: европейская, кавказская, казахская", restTIME: "Время работы: 12:00-22:00", restADRES: "мкр. Хан Тенгри, 149 А", restINSTA: "https://www.instagram.com/kafe__malibu/", rest2GIS: "https://go.2gis.com/hgxij"},
 {id: 6, restNAME: "Хомяк", restIMG: "https://static.tildacdn.com/tild3662-3830-4534-a533-373438663531/photo_2020-08-20_143.jpeg", restPRICE: "Средний чек: 3000–7000 тенге", restKITCH: "Кухни: европейская, итальянская", restTIME: "Время работы: 10:00 до 23:00", restADRES: "бульвар Бухар Жырау, 27/5", restINSTA: "https://www.instagram.com/cafehoma.almaty/", rest2GIS: "https://go.2gis.com/cd0wn"},
@@ -50,6 +50,8 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 {id: 30, restNAME: "Лето", restIMG: "https://static.tildacdn.com/tild6463-6564-4261-b332-336464613065/photo_2020-08-21_162.jpeg", restPRICE: "Средний чек: 4000–6000 тенге", restKITCH: "Кухни: европейская", restTIME: "Время работы: 10:00 до 23:00", restADRES: "5 мкр, 21 Г", restINSTA: "https://www.instagram.com/letovalmaty/", rest2GIS: "https://go.2gis.com/p8zz3"},
 
 ]
+
+let last_all_rest = []
 
 console.log('allRESTARANS connected')
 
@@ -113,4 +115,40 @@ function showNextREST(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+};
+
+function BackButton(){
+
+    let last_rest_id = last_all_rest.length;
+    console.log(last_rest_id)
+    
+    let last_rest = last_all_rest[last_rest_id - 2];
+    console.log(last_rest)
+    
+    let rest_title = document.getElementById('rest_title');
+    let new_rest_title = last_rest.restNAME;
+    console.log(new_rest_title)
+    rest_title.textContent = new_rest_title;
+
+    let all_text_info = document.getElementById('all_text_info');
+    let new_all_text_info = last_rest.restTextInfo;
+    console.log(new_all_text_info)
+    all_text_info.textContent = new_all_text_info;
+
+    let button_INSTA_link = document.getElementById('button_INSTA_link');
+    let new_button_INSTA_link = last_rest.restINSTA;
+    console.log(new_button_INSTA_link)
+    button_INSTA_link.href = new_button_INSTA_link;
+
+    let button_2GIS_link = document.getElementById('button_2GIS_link');
+    let new_button_2GIS_link = last_rest.rest2GIS;
+    console.log(new_button_2GIS_link)
+    button_2GIS_link.href = new_button_2GIS_link;
+
+    let rest_img = document.querySelector('.rest_img');
+    let new_rest_img = last_rest.restIMG;
+    console.log(new_rest_img)
+    rest_img.style.backgroundImage = new_rest_img;
+
+    last_all_rest.pop();
 };
