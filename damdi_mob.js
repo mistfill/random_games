@@ -115,7 +115,13 @@ function showNextREST(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
+    let last_rest_title = rest_title.textContent;
+    let last_rest_img = rest_img.style.backgroundImage;
+    let last_all_text_info = all_text_info.textContent;
+    let last_button_INSTA_link = button_INSTA_link.href;
+    let last_button_2GIS_link = button_2GIS_link.href;
+    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restTextInfo: last_all_text_info, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link};
     last_all_rest.push(last_rest)
 
     console.log(last_all_rest)
