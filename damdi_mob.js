@@ -115,6 +115,10 @@ function showNextREST(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    last_all_rest.push(last_rest)
+
+    console.log(last_all_rest)
 };
 
 function BackButton(){
