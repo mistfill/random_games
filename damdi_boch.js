@@ -43,6 +43,8 @@ function getRandomElement(arr_rgd) {
     return arr_rgd[randIndex_rgd];
 }
 
+let randomELEMENT = getRandomElement(allRESTARANS);
+
 let rest_title = document.getElementById('rest_name');
 let new_rest_title = randomELEMENT.restNAME;
 console.log(new_rest_title)
