@@ -37,3 +37,5 @@ function plusClick(){
         menu_towns.style.display = 'none';
     }
 }
+
+console.log('test start')
