@@ -167,6 +167,10 @@ function first_rest(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let all_cafe_length = document.getgetElementById('all_cafe_lengh');
+    let allRESTARANS_length = allRESTARANS.length;
+    all_cafe_lengh.textContent = "Всего заведений в базе: " + allRESTARANS_length;
 }
 
 window.onload = first_rest;
@@ -295,7 +299,3 @@ function BackButton(){
 
     last_all_rest.pop();
 };
-
-let all_cafe_length = document.getgetElementById('all_cafe_lengh');
-let allRESTARANS_length = allRESTARANS.length;
-all_cafe_lengh.textContent = "Всего заведений в базе: " + allRESTARANS_length;
