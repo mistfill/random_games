@@ -147,7 +147,17 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 
 //ссылка на логотип дамди https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png
 
-let last_all_rest = []
+//пробуем прописать разбитие на массивы по районам
+let SectorAUE = [];
+console.log(SectorAUE)
+allRESTARANS.forEach((element) => {
+    if (allRESTARANS.restSector == "Ауэзовский"){
+        SectorAUE.push(element);
+    } 
+    console.log(SectorAUE)
+})
+
+let last_all_rest = [];
 
 console.log('allRESTARANS connected')
 
