@@ -141,6 +141,8 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 
 {id: 300, restNAME: "Эрмитаж", restPRICE: "Средний чек: 5000–7000 тенге", restKITCH: "Кухни: грузинская, европейская", restADRES: "ул. Жансугурова, 251", restSector:"Турксибский", rest2GIS: "https://go.2gis.com/9cn52", restINSTA: "https://www.instagram.com/cafe_hermitage.almaty/", restTIME: "Время работы: 10:00 до 22:00", restTimeOpen: "10:00", restTimeClose: "22:00", restIMG: "https://thumb.tildacdn.com/tild3331-6266-4462-b539-346231383134/-/format/webp/photo_2020-09-01_212.jpeg"},
 {id: 301, restNAME: "Жайсан", restPRICE: "Средний чек: 1000 тенге", restKITCH: "Кухни: дунганская", restADRES: "ул. Гоголя, 151", restSector:"Алмалинский", rest2GIS: "https://go.2gis.com/979ni", restINSTA: "", restTIME: "Время работы: 09:00 до 22:00", restTimeOpen: "09:00", restTimeClose: "22:00", restIMG: "https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png"},
+{id: 302, restNAME: "Алые паруса", restPRICE: "Средний чек: 1500–3000 тенге", restKITCH: "Кухни: японская, паназиатская", restADRES: "пр. Сейфуллина, 617", restSector:"Бостандыкский", rest2GIS: "https://go.2gis.com/y71n3", restINSTA: "https://www.instagram.com/alyeparusaa/", restTIME: "Время работы: 10:00 до 22:00", restTimeOpen: "10:00", restTimeClose: "22:00", restIMG: "https://thumb.tildacdn.com/tild3837-6362-4637-b330-333139653764/-/format/webp/photo_2020-09-02_165.jpeg"},
+
 ]
 
 //ссылка на логотип дамди https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png
