@@ -152,9 +152,9 @@ let SectorAUE = [];
 console.log(SectorAUE)
 allRESTARANS.forEach((element) => {
     if (allRESTARANS.restSector == "Ауэзовский"){
+        console.log(element)
         SectorAUE.push(element);
-    } 
-    console.log(SectorAUE)
+    }
 })
 
 let last_all_rest = [];
