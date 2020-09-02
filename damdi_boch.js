@@ -147,15 +147,76 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 
 //ссылка на логотип дамди https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png
 
-//пробуем прописать разбитие на массивы по районам
+
+
+
+//Функция распределения по районам
 let SectorAUE = [];
-console.log(SectorAUE)
-allRESTARANS.forEach((element) => {
+let SectorALM = [];
+let SectorBOS = [];
+let SectorTUR = [];
+let SectorJET = [];
+let SectorMED = [];
+let SectorNAU = [];
+let SectorALA = [];
+let SectorILI = [];
+
+
+/*allRESTARANS.forEach((element) => {
     if (allRESTARANS.restSector == "Ауэзовский"){
         console.log(element)
         SectorAUE.push(element);
     }
-})
+})*/
+
+let restID = 0;
+
+function createSectorAUE(){
+    let allRESTARANS_length = allRESTARANS.length;
+    while(restID<allRESTARANS_length){
+        let restNOW = allRESTARANS[restID];
+        /*console.log(restNOW)*/
+        if (restNOW.restSector == "Ауэзовский"){
+            //console.log(restNOW)
+            SectorAUE.push(restNOW)
+            //console.log(SectorAUE)
+        }
+        else if (restNOW.restSector == "Алмалинский"){
+            SectorALM.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Бостандыкский"){
+            SectorBOS.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Турксибский"){
+            SectorTUR.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Жетысуский"){
+            SectorJET.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Медеуский"){
+            SectorMED.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Алатауский"){
+            SectorALA.push(restNOW)
+            //console.log(SectorALM)
+        }
+        else if (restNOW.restSector == "Илийский"){
+            SectorILI.push(restNOW)
+            //console.log(SectorALM)
+        }
+        restID += 1;
+    }
+}
+
+//Вызов функции распределения
+createSectorAUE();
+
+
 
 let last_all_rest = [];
 
