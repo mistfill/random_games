@@ -284,6 +284,8 @@ function changeSector(){
     SectorValue = form.sector_s.value;
 
     console.log(SectorValue)
+    
+    showNextREST()
 }
 
 //запуск по кнопке в зависимости от выбранного района
