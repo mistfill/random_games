@@ -1,6 +1,6 @@
 console.log('Start')
 
-let damdiLOGO = "https://thumb.tildacdn.com/tild6538-3761-4137-b934-353364363365/-/format/webp/noroot.png";
+let damdiLOGO = "https://thumb.tildacdn.com/tild3338-6163-4766-b838-386465326436/-/format/webp/noroot.png";
 
 let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.com/tild3032-3861-4935-a332-383566353361/-/format/webp/gold.jpg", restPRICE: "Средний чек: 1500-3500тг", restKITCH: "Кухни: паназиатская, американская, европейская, восточная, китайская", restTIME: "Время работы: 11:00 до 02:00", restTimeOpen: "11:00", restTimeClose: "02:00", restADRES: "Мкр. Жетысу 2 дом 11", restSector:"Ауэзовский", restINSTA: "https://www.instagram.com/cafegold_kz/", rest2GIS: "https://go.2gis.com/qo6gme"},
 {id: 2, restNAME: "BubbleGum", restIMG: "https://thumb.tildacdn.com/tild3338-6461-4335-b665-316133333730/-/format/webp/BubbleGum.jpg", restPRICE: "Средний чек: 4000–7000тг", restKITCH: "Кухни: европейская, восточная", restTIME: "Время работы: 10:00 до 22:00", restTimeOpen: "10:00", restTimeClose: "22:00", restADRES: "ПерекуCity Mixx 3 этаж, ул. Шевченко, 99", restSector:"Алмалинский", restINSTA: "https://www.instagram.com/bubblegum_cafe/", rest2GIS: "https://go.2gis.com/t8fxh"},
