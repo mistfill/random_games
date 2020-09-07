@@ -301,6 +301,12 @@ function changeSector(){
     console.log(SectorValue)
     
     showNextREST()
+    
+    //фукнция прокрутки наверх при смене района
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
 }
 
 //запуск по кнопке в зависимости от выбранного района
