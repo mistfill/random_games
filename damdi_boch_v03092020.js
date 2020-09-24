@@ -456,6 +456,9 @@ function first_rest(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -466,9 +469,6 @@ function first_rest(){
     let new_rest_img = randomELEMENT.restIMG;
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_rest_img;
     
     let all_cafe_length = document.getElementById('all_cafe_lengh');
     let allRESTARANS_length = allRESTARANS.length;
@@ -524,6 +524,9 @@ function showNextREST_allSectors(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -596,6 +599,9 @@ function showNextREST_SectorAUE(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -668,6 +674,9 @@ function showNextREST_SectorALM(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -740,6 +749,9 @@ function showNextREST_SectorBOS(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -812,6 +824,9 @@ function showNextREST_SectorTUR(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -884,6 +899,9 @@ function showNextREST_SectorJET(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -956,6 +974,9 @@ function showNextREST_SectorMED(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1028,6 +1049,9 @@ function showNextREST_SectorNAU(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1100,6 +1124,9 @@ function showNextREST_SectorALA(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1172,6 +1199,9 @@ function showNextREST_SectorILI(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1248,6 +1278,9 @@ function BackButton(){
     let new_button_INSTA_link = last_rest.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
+    
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = last_rest.rest2GIS;
