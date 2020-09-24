@@ -467,6 +467,9 @@ function first_rest(){
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
+    let rest_img_link = document.querySelector('.rest_img_link');
+    rest_img_link.href = new_rest_img;
+    
     let all_cafe_length = document.getElementById('all_cafe_lengh');
     let allRESTARANS_length = allRESTARANS.length;
     //console.log(allRESTARANS_length)
