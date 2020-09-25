@@ -380,7 +380,7 @@ function changeSector(){
 let OpenValue = "openOff";
 console.log(OpenValue)
 
-function changeOpen(){
+function changeOpen(OpenValue){
     if(OpenValue == "openOff"){
        console.log(OpenValue)
     
