@@ -377,6 +377,24 @@ function changeSector(){
     });
 }
 
+let OpenValue = "openOff";
+
+function changeOpen(){
+    let formOpen = document.forms.OpenForm;
+    
+    OpenValue = formOpen.OpenSelector.value;
+    
+    console.log(OpenValue)
+    
+    showNextREST()
+    
+    //фукнция прокрутки наверх при смене района
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+}
+
 //запуск по кнопке в зависимости от выбранного района
 
 function showNextREST(){
@@ -1299,3 +1317,6 @@ function BackButton(){
 
     last_all_rest.pop();
 };
+
+
+
