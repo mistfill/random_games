@@ -378,21 +378,36 @@ function changeSector(){
 }
 
 let OpenValue = "openOff";
+console.log(OpenValue)
 
 function changeOpen(){
-    let formOpen = document.forms.OpenForm;
+    if(OpenValue == "openOff"){
+       console.log(OpenValue)
     
-    OpenValue = formOpen.OpenSelector.value;
+        showNextREST()
+
+        //фукнция прокрутки наверх при смене района
+        window.scroll({
+          top: 0,
+          behavior: 'smooth'
+        }); 
+        
+        let OpenValue = "openOn";
+    }
+    else if (OpenValue == "openOn"){
+        console.log(OpenValue)
     
-    console.log(OpenValue)
+        showNextREST()
+
+        //фукнция прокрутки наверх при смене района
+        window.scroll({
+          top: 0,
+          behavior: 'smooth'
+        }); 
+        
+        let OpenValue = "openOff";
     
-    showNextREST()
-    
-    //фукнция прокрутки наверх при смене района
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
+    }
 }
 
 //запуск по кнопке в зависимости от выбранного района
