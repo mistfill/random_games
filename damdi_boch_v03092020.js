@@ -382,7 +382,6 @@ console.log(OpenValue)
 
 function changeOpen(OV = OpenValue){
     console.log("Смена OpenValue")
-    console.log(OV)
     
     if(OV == "openOff"){
        console.log(OV)
@@ -409,7 +408,6 @@ function changeOpen(OV = OpenValue){
         }); 
         
         let OV = "openOff";
-    
     }
 }
 
