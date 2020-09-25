@@ -380,12 +380,12 @@ function changeSector(){
 let OpenValue = "openOff";
 console.log(OpenValue)
 
-function changeOpen(OpenValue){
+function changeOpen(OV = OpenValue){
     console.log("Смена OpenValue")
-    console.log(OpenValue)
+    console.log(OV)
     
-    if(OpenValue == "openOff"){
-       console.log(OpenValue)
+    if(OV == "openOff"){
+       console.log(OV)
     
         showNextREST()
 
@@ -395,10 +395,10 @@ function changeOpen(OpenValue){
           behavior: 'smooth'
         }); 
         
-        let OpenValue = "openOn";
+        let OV = "openOn";
     }
-    else if (OpenValue == "openOn"){
-        console.log(OpenValue)
+    else if (OV == "openOn"){
+        console.log(OV)
     
         showNextREST()
 
@@ -408,7 +408,7 @@ function changeOpen(OpenValue){
           behavior: 'smooth'
         }); 
         
-        let OpenValue = "openOff";
+        let OV = "openOff";
     
     }
 }
