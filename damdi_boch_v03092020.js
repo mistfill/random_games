@@ -381,6 +381,9 @@ let OpenValue = "openOff";
 console.log(OpenValue)
 
 function changeOpen(OpenValue){
+    console.log("Смена OpenValue")
+    console.log(OpenValue)
+    
     if(OpenValue == "openOff"){
        console.log(OpenValue)
     
