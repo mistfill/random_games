@@ -380,10 +380,8 @@ function changeSector(){
 let OpenValue = "openOff";
 console.log(OpenValue)
 
-function changeOpen(OV = OpenValue){
-    console.log("Смена OpenValue")
-    
-    if(OV == "openOff"){
+function check_OpenValue(){
+ if(OpenValue == "openOff"){
        console.log(OV)
     
         showNextREST()
@@ -394,9 +392,9 @@ function changeOpen(OV = OpenValue){
           behavior: 'smooth'
         }); 
         
-        let OV = "openOn";
+        let OpenValue = "openOn";
     }
-    else if (OV == "openOn"){
+    else if (OpenValue == "openOn"){
         console.log(OV)
     
         showNextREST()
@@ -407,8 +405,13 @@ function changeOpen(OV = OpenValue){
           behavior: 'smooth'
         }); 
         
-        let OV = "openOff";
+        let OpenValue = "openOff";
     }
+}
+
+function changeOpen(){
+    console.log("Смена OpenValue")
+    check_OpenValue();
 }
 
 //запуск по кнопке в зависимости от выбранного района
