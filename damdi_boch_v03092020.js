@@ -367,24 +367,6 @@ function check_OpenValue(){
     }
 }
 
-let OpenSelector = document.querySelector(".OpenSelector");
-let OpenValue = 0;
-
-function changeOpen() {
-    if (OpenSelector.checked) {
-        console.log( 'чекбокс включён' );
-    } else {
-        console.log( 'чекбокс выключён' );
-    }
-}
-
-/*function changeOpen(){
-    //забирает значение value
-    let formOpen = document.forms.OpenForm;
-    OpenValue = formOpen.OpenSelector.value;
-    console.log(OpenValue)    
-}*/
-
 //запуск по кнопке в зависимости от выбранного района
 
 function showNextREST(){
@@ -1308,5 +1290,24 @@ function BackButton(){
     last_all_rest.pop();
 };
 
+
+function changeOpen(){
+    let openText = document.getElementById('openText');
+    openTextContent = openText.textContent;
+    console.log(openTextContent)
+
+    if(openTextContent == "Показать открытые"){
+        let openText = document.getElementById('openText');
+        console.log('Показываются только открытые')
+
+        openText.textContent = "Показать все";
+    }
+    else {
+        let openText = document.getElementById('openText');
+        console.log("Показываются все")
+
+        openText.textContent = "Показать открытые";
+    }
+}
 
 
