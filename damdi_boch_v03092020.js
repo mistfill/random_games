@@ -367,10 +367,10 @@ function check_OpenValue(){
     }
 }
 
-let OpenSelector = document.getElementById("OpenSelector");
+let OpenSelector = document.querySelector("#OpenSelector");
 let OpenValue = 0;
 
-OpenSelector.onclick = function() {
+function changeOpen() {
     if (OpenSelector.checked) {
         console.log( 'чекбокс включён' );
     } else {
