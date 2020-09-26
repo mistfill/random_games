@@ -346,13 +346,13 @@ function changeSector(){
     });
 }
 
-let OpenValue = "openOff";
-console.log(OpenValue)
+//Проверяем клик по чекбокс
 
-
+//let OpenValue = "openOff";
+//console.log(OpenValue)
 
 function check_OpenValue(){
-    console.log(OpenValue)
+    
     if(OpenValue == "openOff"){
         console.log(OpenValue)
         showNextREST()
@@ -372,8 +372,8 @@ function changeOpen(){
     OpenValue = formOpen.OpenSelector.value;
     console.log(OpenValue)
     
+    let 
     console.log("Смена OpenValue")
-    check_OpenValue(OpenValue);
     
      //фукнция прокрутки наверх при смене района
     window.scroll({
