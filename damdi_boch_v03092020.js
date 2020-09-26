@@ -328,37 +328,6 @@ function createSectorAUE(){
 //Вызов функции распределения
 createSectorAUE();
 
-
-//Читаем форму - TO DO
-//make SectorValue
-
-/*function setSectorValue(){
-
-    const form = document.forms.SectorForm; 
-
-    console.log(form)
-    let SectorSelector;
-
-    /*
-    getSectorValue();
-    newSectorValue();
-
-    form.oninput = () => {
-        getSectorValue();
-        newSectorValue();
-    }
-
-    function getSectorValue(){
-        SectorSelector = form.sector_s.value;
-    }
-
-    function newSectorValue(){
-        let SectorValue = SectorSelector;
-    }
-}
-
-setSectorValue();*/
-
 let SectorValue = "all";
 
 function changeSector(){
@@ -380,17 +349,13 @@ function changeSector(){
 let OpenValue = "openOff";
 console.log(OpenValue)
 
-function check_OpenValue(OpenValue){
+
+
+function check_OpenValue(){
     console.log(OpenValue)
     if(OpenValue == "openOff"){
         console.log(OpenValue)
         showNextREST()
-
-        //фукнция прокрутки наверх при смене района
-        window.scroll({
-          top: 0,
-          behavior: 'smooth'
-        }); 
 
         let OpenValue = "openOn";
     }
@@ -398,20 +363,23 @@ function check_OpenValue(OpenValue){
         console.log(OpenValue)
 
         showNextREST()
-
-        //фукнция прокрутки наверх при смене района
-        window.scroll({
-          top: 0,
-          behavior: 'smooth'
-        }); 
-
         let OpenValue = "openOff";
     }
 }
 
 function changeOpen(){
+    let formOpen = document.forms.OpenForm;
+    OpenValue = formOpen.OpenSelector.value;
+    console.log(OpenValue)
+    
     console.log("Смена OpenValue")
-    check_OpenValue();
+    check_OpenValue(OpenValue);
+    
+     //фукнция прокрутки наверх при смене района
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
 }
 
 //запуск по кнопке в зависимости от выбранного района
