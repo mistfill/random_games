@@ -382,7 +382,7 @@ console.log(OpenValue)
 
 function check_OpenValue(){
  if(OpenValue == "openOff"){
-       console.log(OV)
+       console.log(OpenValue)
     
         showNextREST()
 
@@ -395,7 +395,7 @@ function check_OpenValue(){
         let OpenValue = "openOn";
     }
     else if (OpenValue == "openOn"){
-        console.log(OV)
+        console.log(OpenValue)
     
         showNextREST()
 
