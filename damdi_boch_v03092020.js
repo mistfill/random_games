@@ -367,7 +367,7 @@ function check_OpenValue(){
     }
 }
 
-let OpenSelector = document.querySelector("#OpenSelector");
+let OpenSelector = document.querySelector(".OpenSelector");
 let OpenValue = 0;
 
 function changeOpen() {
