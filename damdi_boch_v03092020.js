@@ -367,33 +367,23 @@ function check_OpenValue(){
     }
 }
 
-function changeOpen(){
+let OpenSelector = document.getElementById("OpenSelector");
+let OpenValue = 0;
+
+OpenSelector.onclick = function() {
+    if (OpenSelector.checked) {
+        console.log( 'чекбокс включён' );
+    } else {
+        console.log( 'чекбокс выключён' );
+    }
+}
+
+/*function changeOpen(){
     //забирает значение value
     let formOpen = document.forms.OpenForm;
     OpenValue = formOpen.OpenSelector.value;
-    console.log(OpenValue)
-    
-    if(OpenValue == "openOff"){
-        console.log(OpenValue)
-        showNextREST()
-
-        let OpenValue = "openOn";
-    }
-    else if (OpenValue == "openOn"){
-        console.log(OpenValue)
-
-        showNextREST()
-        let OpenValue = "openOff";
-    }
-    
-    console.log("Смена OpenValue")
-    
-    //фукнция прокрутки наверх при смене района
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-}
+    console.log(OpenValue)    
+}*/
 
 //запуск по кнопке в зависимости от выбранного района
 
