@@ -368,14 +368,27 @@ function check_OpenValue(){
 }
 
 function changeOpen(){
+    //забирает значение value
     let formOpen = document.forms.OpenForm;
     OpenValue = formOpen.OpenSelector.value;
     console.log(OpenValue)
     
-    let 
+    if(OpenValue == "openOff"){
+        console.log(OpenValue)
+        showNextREST()
+
+        let OpenValue = "openOn";
+    }
+    else if (OpenValue == "openOn"){
+        console.log(OpenValue)
+
+        showNextREST()
+        let OpenValue = "openOff";
+    }
+    
     console.log("Смена OpenValue")
     
-     //фукнция прокрутки наверх при смене района
+    //фукнция прокрутки наверх при смене района
     window.scroll({
       top: 0,
       behavior: 'smooth'
