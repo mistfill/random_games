@@ -380,10 +380,10 @@ function changeSector(){
 let OpenValue = "openOff";
 console.log(OpenValue)
 
-function check_OpenValue(){
- if(OpenValue == "openOff"){
-       console.log(OpenValue)
-    
+function check_OpenValue(OpenValue){
+    console.log(OpenValue)
+    if(OpenValue == "openOff"){
+        console.log(OpenValue)
         showNextREST()
 
         //фукнция прокрутки наверх при смене района
@@ -391,12 +391,12 @@ function check_OpenValue(){
           top: 0,
           behavior: 'smooth'
         }); 
-        
+
         let OpenValue = "openOn";
     }
     else if (OpenValue == "openOn"){
         console.log(OpenValue)
-    
+
         showNextREST()
 
         //фукнция прокрутки наверх при смене района
@@ -404,7 +404,7 @@ function check_OpenValue(){
           top: 0,
           behavior: 'smooth'
         }); 
-        
+
         let OpenValue = "openOff";
     }
 }
