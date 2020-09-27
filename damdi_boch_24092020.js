@@ -1358,7 +1358,7 @@ function showOpenClose(){
         let timeNow = current_date_time_block.textContent;
         //console.log(timeNow)
 
-        if (restNowTimeOpen <= timeNow && restNowTimeClose >= timeNow){
+        if (restNowTimeOpen <= timeNow && restNowTimeClose > timeNow){
             openedRest.push(restNOW)
         }
 
