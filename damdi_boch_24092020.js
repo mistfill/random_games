@@ -250,6 +250,10 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 {id: 407, restNAME: "Thai Tom Yam", restPRICE: "Средний чек: 5000–6000 тенге", restKITCH: "Кухни: японская, европейская, тайская", restADRES: "ЖК Азия, Гоголя, 176 к 1", restSector:"Алмалинский", rest2GIS: "https://go.2gis.com/bie41c", restINSTA: "https://www.instagram.com/tom_yam_thai_restaurant_/", restTIME: "Время работы: 11:00 до 01:00", restTimeOpen: "11:00", restTimeClose: "25:00", restIMG: "https://static.tildacdn.com/tild3137-3835-4363-b735-633331383038/photo_2020-09-24_110.jpeg"},
 {id: 408, restNAME: "Одесса рЭсторан", restPRICE: "Средний чек: 4000–10000 тенге", restKITCH: "Кухни: русская, украинская, еврейская", restADRES: "пр. Назарбаева, 220", restSector:"Медеуский", rest2GIS: "https://go.2gis.com/03urd", restINSTA: "https://www.instagram.com/odessa_almaty/", restTIME: "Время работы: 11:00 до 23:00", restTimeOpen: "11:00", restTimeClose: "23:00", restIMG: "https://static.tildacdn.com/tild3763-3136-4661-b862-356465373665/photo_2020-09-24_111.jpeg"},
 {id: 409, restNAME: "Pattaya FOOD", restPRICE: "Средний чек: 3000–5000 тенге", restKITCH: "Кухни: тайская", restADRES: "мкр. Хан-Тенгри, 212/3", restSector:"Бостандыкский", rest2GIS: "https://go.2gis.com/qtaiq", restINSTA: "https://www.instagram.com/pattayafood.kz/", restTIME: "Время работы: 10:00 до 22:00", restTimeOpen: "10:00", restTimeClose: "22:00", restIMG: "https://static.tildacdn.com/tild6565-3034-4361-a436-646463646266/photo_2020-09-24_111.jpeg"},
+{id: 411, restNAME: "Turandot на Жарокова", restPRICE: "Средний чек: 5000–6000 тенге", restKITCH: "Кухни: китайская", restADRES: "ул. Жарокова, 282,", restSector:"Бостандыкский ", rest2GIS: "https://go.2gis.com/gfdax", restINSTA: "https://www.instagram.com/turandot.kz/", restTIME: "Время работы: 12:00 до 23:00", restTimeOpen: "12:00", restTimeClose: "23:00", restIMG: damdiLOGO},
+{id: 412, restNAME: "Тануки", restPRICE: "Средний чек: 5000–7000 тенге", restKITCH: "Кухни: японская, авторская", restADRES: "пр. Достык, 232", restSector:"Медеуский ", rest2GIS: "https://go.2gis.com/da73r", restINSTA: "https://www.instagram.com/tanuki_kz/", restTIME: "Время работы: 12:00 до 22:00", restTimeOpen: "12:00", restTimeClose: "22:00", restIMG: "https://thumb.tildacdn.com/tild6665-3666-4034-a463-353336396561/-/resize/560x/-/format/webp/74302609_119225281_1.jpg"},
+{id: 413, restNAME: "Бочонок на Жандосова", restPRICE: "Средний чек: 5000–7000 тенге", restKITCH: "Кухни: европейская, кавказская, немецкая, мексиканская", restADRES: "ул. Жандосова, 40", restSector:"Бостандыкский ", rest2GIS: "https://go.2gis.com/iu7jor", restINSTA: "https://www.instagram.com/bochonok.kz/", restTIME: "Время работы: 12:00 до 22:00", restTimeOpen: "12:00", restTimeClose: "22:00", restIMG: "https://thumb.tildacdn.com/tild3137-6565-4466-a231-623034373234/-/resize/560x/-/format/webp/74302609_81166138_95.jpg"},
+{id: 414, restNAME: "Бочонок на Достык", restPRICE: "Средний чек: 5000–7000 тенге", restKITCH: "Кухни: европейская, кавказская, немецкая", restADRES: "пр. Достык, 109 Б", restSector:"Медеуский ", rest2GIS: "https://go.2gis.com/y27yi5", restINSTA: "https://www.instagram.com/bochonok.kz/", restTIME: "Время работы: 12:00 до 22:00", restTimeOpen: "12:00", restTimeClose: "22:00", restIMG: "https://thumb.tildacdn.com/tild3137-6565-4466-a231-623034373234/-/resize/560x/-/format/webp/74302609_81166138_95.jpg"},
 
 ]
 
@@ -268,14 +272,6 @@ let SectorMED = [];
 let SectorNAU = [];
 let SectorALA = [];
 let SectorILI = [];
-
-
-/*allRESTARANS.forEach((element) => {
-    if (allRESTARANS.restSector == "Ауэзовский"){
-        console.log(element)
-        SectorAUE.push(element);
-    }
-})*/
 
 let restID = 0;
 
