@@ -460,8 +460,8 @@ function first_rest(){
     //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -531,8 +531,8 @@ function showNextREST_allSectors(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -609,8 +609,8 @@ function showNextREST_SectorAUE(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -687,8 +687,8 @@ function showNextREST_SectorALM(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -765,8 +765,8 @@ function showNextREST_SectorBOS(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -843,8 +843,8 @@ function showNextREST_SectorTUR(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -921,8 +921,8 @@ function showNextREST_SectorJET(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -999,8 +999,8 @@ function showNextREST_SectorMED(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1077,8 +1077,8 @@ function showNextREST_SectorNAU(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1155,8 +1155,8 @@ function showNextREST_SectorALA(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1233,8 +1233,8 @@ function showNextREST_SectorILI(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -1315,8 +1315,8 @@ function BackButton(){
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
-    let rest_img_link = document.querySelector('.rest_img_link');
-    rest_img_link.href = new_button_INSTA_link;
+    //let rest_img_link = document.querySelector('.rest_img_link');
+    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = last_rest.rest2GIS;
