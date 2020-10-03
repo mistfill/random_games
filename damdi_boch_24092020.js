@@ -473,6 +473,9 @@ function first_rest(){
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+    
     let all_cafe_length = document.getElementById('all_cafe_lengh');
     let allRESTARANS_length = allRESTARANS.length;
     //console.log(allRESTARANS_length)
@@ -540,6 +543,9 @@ function showNextREST_allSectors(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -615,6 +621,9 @@ function showNextREST_SectorAUE(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -690,6 +699,9 @@ function showNextREST_SectorALM(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -765,6 +777,9 @@ function showNextREST_SectorBOS(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -840,6 +855,9 @@ function showNextREST_SectorTUR(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -915,6 +933,9 @@ function showNextREST_SectorJET(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -990,6 +1011,9 @@ function showNextREST_SectorMED(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -1065,6 +1089,9 @@ function showNextREST_SectorNAU(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -1140,6 +1167,9 @@ function showNextREST_SectorALA(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -1215,6 +1245,9 @@ function showNextREST_SectorILI(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
     let last_rest_title = rest_title.textContent;
     let last_rest_img = rest_img.style.backgroundImage;
@@ -1294,6 +1327,9 @@ function BackButton(){
     let new_rest_img = last_rest.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = new_rest_img;
+    
+    let popup_img = document.getElementById('popup_img');
+    popup_img.style.backgroundImage = new_rest_img;
 
     last_all_rest.pop();
 };
@@ -1420,4 +1456,18 @@ function changeOpen(){
         behavior: 'smooth'
         });
     }
+}
+
+function popupClose() {
+    let popup_box = document.getElementById('popup_box');
+
+    popup_box.style.zIndex = 0;
+    popup_box.style.opacity = 0;
+}
+
+function popupShow(){
+    let popup_box = document.getElementById('popup_box');
+
+    popup_box.style.zIndex = 100;
+    popup_box.style.opacity = 1;
 }
