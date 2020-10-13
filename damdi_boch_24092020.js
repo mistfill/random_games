@@ -278,7 +278,7 @@ let allRESTARANS = [{id: 1, restNAME: "Gold", restIMG: "https://thumb.tildacdn.c
 
 //ссылка на логотип дамди https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png
 
-
+let allRESTARANS_backup = allRESTARANS;
 
 
 //Функция распределения по районам
@@ -292,6 +292,14 @@ let SectorNAU = [];
 let SectorALA = [];
 let SectorILI = [];
 
+
+/*allRESTARANS.forEach((element) => {
+    if (allRESTARANS.restSector == "Ауэзовский"){
+        console.log(element)
+        SectorAUE.push(element);
+    }
+})*/
+
 let restID = 0;
 
 allRESTARANS_allTIME = allRESTARANS;
@@ -300,7 +308,11 @@ function createSectorAUE(){
     let allRESTARANS_length = allRESTARANS_allTIME.length;
 
     console.log(allRESTARANS_allTIME)
+    console.log('Алгоритм выбора районов - первичный - ВЕРНО')
+
     while(restID<allRESTARANS_length){
+        console.log('Цикл While запустился')
+
         let restNOW = allRESTARANS_allTIME[restID];
         //console.log(restNOW)
         if (restNOW.restSector == "Ауэзовский"){
@@ -314,19 +326,19 @@ function createSectorAUE(){
         }
         else if (restNOW.restSector == "Бостандыкский"){
             SectorBOS.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorBOS)
         }
         else if (restNOW.restSector == "Турксибский"){
             SectorTUR.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorTUR)
         }
         else if (restNOW.restSector == "Жетысуский"){
             SectorJET.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorJET)
         }
         else if (restNOW.restSector == "Медеуский"){
             SectorMED.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorMED)
         }
         else if (restNOW.restSector == "Наурызбайский"){
             SectorNAU.push(restNOW)
@@ -334,11 +346,11 @@ function createSectorAUE(){
         }
         else if (restNOW.restSector == "Алатауский"){
             SectorALA.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorALA)
         }
         else if (restNOW.restSector == "Илийский"){
             SectorILI.push(restNOW)
-            //console.log(SectorALM)
+            //console.log(SectorILI)
         }
 
 
@@ -346,9 +358,11 @@ function createSectorAUE(){
     }
 }
 
-
 //Вызов функции распределения
 createSectorAUE();
+
+
+//Читаем форму 
 
 let SectorValue = "all";
 
@@ -358,35 +372,6 @@ function changeSector(){
     SectorValue = form.sector_s.value;
 
     console.log(SectorValue)
-    
-    showNextREST()
-    
-    //фукнция прокрутки наверх при смене района
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    });
-}
-
-//Проверяем клик по чекбокс
-
-//let OpenValue = "openOff";
-//console.log(OpenValue)
-
-function check_OpenValue(){
-    
-    if(OpenValue == "openOff"){
-        console.log(OpenValue)
-        showNextREST()
-
-        let OpenValue = "openOn";
-    }
-    else if (OpenValue == "openOn"){
-        console.log(OpenValue)
-
-        showNextREST()
-        let OpenValue = "openOff";
-    }
 }
 
 //запуск по кнопке в зависимости от выбранного района
@@ -473,9 +458,6 @@ function first_rest(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -486,7 +468,7 @@ function first_rest(){
     let new_rest_img = randomELEMENT.restIMG;
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
     
@@ -544,9 +526,6 @@ function showNextREST_allSectors(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -557,7 +536,7 @@ function showNextREST_allSectors(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -622,9 +601,6 @@ function showNextREST_SectorAUE(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -635,7 +611,7 @@ function showNextREST_SectorAUE(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -700,9 +676,6 @@ function showNextREST_SectorALM(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -713,7 +686,7 @@ function showNextREST_SectorALM(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -778,9 +751,6 @@ function showNextREST_SectorBOS(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -791,7 +761,7 @@ function showNextREST_SectorBOS(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -856,9 +826,6 @@ function showNextREST_SectorTUR(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -869,7 +836,7 @@ function showNextREST_SectorTUR(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -934,9 +901,6 @@ function showNextREST_SectorJET(){
     let new_button_INSTA_link = randomELEMENT.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
@@ -947,7 +911,7 @@ function showNextREST_SectorJET(){
     let new_rest_img = randomELEMENT.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -972,31 +936,31 @@ function showNextREST_SectorMED(){
     let randomELEMENT = getRandomElement(SectorMED);
 
     let new_rest_sector = randomELEMENT.restSector;
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT.restNAME;
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT.restPRICE;
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT.restKITCH;
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT.restTIME;
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT.restADRES;
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1010,22 +974,19 @@ function showNextREST_SectorMED(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT.restINSTA;
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     let new_rest_img = randomELEMENT.restIMG;
-    console.log(new_rest_img)
+    //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -1041,7 +1002,7 @@ function showNextREST_SectorMED(){
     let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
     last_all_rest.push(last_rest)
 
-    console.log(last_all_rest)
+    //console.log(last_all_rest)
 };
 
 //SectorNAU
@@ -1050,31 +1011,31 @@ function showNextREST_SectorNAU(){
     let randomELEMENT = getRandomElement(SectorNAU);
 
     let new_rest_sector = randomELEMENT.restSector;
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT.restNAME;
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT.restPRICE;
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT.restKITCH;
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT.restTIME;
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT.restADRES;
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1088,22 +1049,19 @@ function showNextREST_SectorNAU(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT.restINSTA;
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     let new_rest_img = randomELEMENT.restIMG;
-    console.log(new_rest_img)
+    //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -1119,7 +1077,7 @@ function showNextREST_SectorNAU(){
     let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
     last_all_rest.push(last_rest)
 
-    console.log(last_all_rest)
+    //console.log(last_all_rest)
 };
 
 //SectorALA
@@ -1128,31 +1086,31 @@ function showNextREST_SectorALA(){
     let randomELEMENT = getRandomElement(SectorALA);
 
     let new_rest_sector = randomELEMENT.restSector;
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT.restNAME;
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT.restPRICE;
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT.restKITCH;
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT.restTIME;
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT.restADRES;
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1166,22 +1124,19 @@ function showNextREST_SectorALA(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT.restINSTA;
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     let new_rest_img = randomELEMENT.restIMG;
-    console.log(new_rest_img)
+    //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -1197,7 +1152,7 @@ function showNextREST_SectorALA(){
     let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
     last_all_rest.push(last_rest)
 
-    console.log(last_all_rest)
+    //console.log(last_all_rest)
 };
 
 //SectorILI
@@ -1206,31 +1161,31 @@ function showNextREST_SectorILI(){
     let randomELEMENT = getRandomElement(SectorILI);
 
     let new_rest_sector = randomELEMENT.restSector;
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT.restNAME;
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT.restPRICE;
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT.restKITCH;
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT.restTIME;
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT.restADRES;
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1244,22 +1199,19 @@ function showNextREST_SectorILI(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT.restINSTA;
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT.rest2GIS;
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     let new_rest_img = randomELEMENT.restIMG;
-    console.log(new_rest_img)
+    //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
 
@@ -1275,7 +1227,7 @@ function showNextREST_SectorILI(){
     let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
     last_all_rest.push(last_rest)
 
-    console.log(last_all_rest)
+    //console.log(last_all_rest)
 };
 
 
@@ -1328,9 +1280,6 @@ function BackButton(){
     let new_button_INSTA_link = last_rest.restINSTA;
     console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
-    
-    //let rest_img_link = document.querySelector('.rest_img_link');
-    //rest_img_link.href = new_button_INSTA_link;
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = last_rest.rest2GIS;
@@ -1341,11 +1290,11 @@ function BackButton(){
     let new_rest_img = last_rest.restIMG;
     console.log(new_rest_img)
     rest_img.style.backgroundImage = new_rest_img;
-    
+
     let popup_img = document.getElementById('popup_img');
     popup_img.style.backgroundImage = new_rest_img;
 
-    last_all_rest.pop();
+    //last_all_rest.pop();
 };
 
 
@@ -1372,8 +1321,10 @@ function showTime(){
         var hours = zero_first_format(current_datetime.getHours());
         var minutes = zero_first_format(current_datetime.getMinutes());
         var seconds = zero_first_format(current_datetime.getSeconds());
+        var testTIME = 3;
 
-        return hours
+        //return hours
+        return testTIME
     }
 
     /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
@@ -1388,39 +1339,46 @@ setInterval(function () {
 
 //Функция собирает список открытых
 
-let timeID = 0;
-let openedRest = [];
+let timeID = 0; //считает айди кафе из общего списка
+let openedRest = []; //собирается список открытых кафе
 
-function showOpenClose(){
+function showOpenClose(){ //запускает сбор открытых кафе
+
     /*let current_date_time_block = document.getElementById('timeNow');
     let timeNow = current_date_time_block.textContent;
     console.log(timeNow)*/
     
-    let allRESTARANS_length = allRESTARANS.length;
-    while(timeID<allRESTARANS_length){
-        let restNOW = allRESTARANS[timeID];
-        let restNowTimeOpen = restNOW.restTimeOpen.substr(0,2);
-        //console.log(restNowTimeOpen)
+    let allRESTARANS_length = allRESTARANS.length; //переменная количества кафе в общем списке
+
+    while(timeID<allRESTARANS_length){ //пока не перечисленны все кафе из списка продолжай
+
+        let restNOW = allRESTARANS[timeID]; //выбираем кафе из общего списка по текущему id 
+        let restNowTimeOpen = Number(restNOW.restTimeOpen.substr(0,2)); //отрываем от времени открытия минуты
         //console.log(restNOW.restNAME)
-        let restNowTimeClose = restNOW.restTimeClose.substr(0,2);
-        //console.log(restNowTimeClose)
+        //console.log(restNowTimeOpen)
 
-        let current_date_time_block = document.getElementById('timeNow');
-        let timeNow = current_date_time_block.textContent;
-        //console.log(timeNow)
+        let restNowTimeClose = Number(restNOW.restTimeClose.substr(0,2)); //отрываем от времени закрытия минуты
+        console.log(restNowTimeClose)
 
-        if (restNowTimeOpen <= timeNow && restNowTimeClose > timeNow){
+        let current_date_time_block = document.getElementById('timeNow'); //стучимся в текущее время
+        let timeNow = Number(current_date_time_block.textContent); //переменная равна текущему времени
+        console.log(timeNow)
+
+        console.log(timeNow >= restNowTimeOpen) //время сейчас больше или равно времени открытия
+        console.log(restNowTimeClose >= timeNow) //время сейчас меньше времени закрытия - почему False?
+
+        if (timeNow >= restNowTimeOpen && timeNow < restNowTimeClose){ 
+
+            console.log(restNowTimeOpen + " time open in IF")
+            console.log(restNowTimeClose + " time close in IF")
+            console.log(timeNow + " time now in IF")
+        //если время открытия меньше или равно времени сейчас и время закрытия больше или равно времени сейчас 
+
             openedRest.push(restNOW)
+            console.log(restNOW.restNAME + ' добавлен в список')
         }
-
-        /*if (restNOW.restSector == "Ауэзовский"){
-            //console.log(restNOW)
-            SectorAUE.push(restNOW)
-            //console.log(SectorAUE)
-        }*/
-
-        //console.log(openedRest)
         timeID += 1;
+        //console.log(openedRest)
     }
 }
 
@@ -1433,16 +1391,19 @@ function changeOpen(){
 
     if(openTextContent == "Показать открытые"){
         let openText = document.getElementById('openText');
-        console.log('Показываются только открытые')
+        //console.log('Показываются только открытые')
 
         openText.textContent = "Показать все";
         
         allRESTARANS_allTIME = openedRest;
         console.log(allRESTARANS_allTIME)
+        console.log("показаны только открытые рестораны")
 
-        createSectorAUE();
+        restID = 0;
 
-        showNextREST()
+        createSectorAUE(restID = 0); 
+
+        showNextREST(allRESTARANS = allRESTARANS_allTIME);
     
         //фукнция прокрутки наверх при смене района
         window.scroll({
@@ -1452,17 +1413,20 @@ function changeOpen(){
     }
     else {
         let openText = document.getElementById('openText');
-        console.log("Показываются все")
+        //console.log("Показываются все")
 
         openText.textContent = "Показать открытые";
 
-        allRESTARANS_allTIME = allRESTARANS;
+        allRESTARANS_allTIME = allRESTARANS_backup;
 
         console.log(allRESTARANS_allTIME)
+        console.log(" показаны все ресторана")
 
-        createSectorAUE();
+        restID = 0;
 
-        showNextREST()
+        createSectorAUE(restID = 0); 
+
+        showNextREST(allRESTARANS = allRESTARANS_allTIME);
     
         //фукнция прокрутки наверх при смене района
         window.scroll({
@@ -1471,6 +1435,8 @@ function changeOpen(){
         });
     }
 }
+
+
 
 function popupClose() {
     let popup_box = document.getElementById('popup_box');
@@ -1485,3 +1451,4 @@ function popupShow(){
     popup_box.style.zIndex = 100;
     popup_box.style.opacity = 1;
 }
+
