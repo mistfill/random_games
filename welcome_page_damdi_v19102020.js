@@ -64,7 +64,7 @@ function hideCitys(){
     function draw(top_id) {
         let city_box = document.getElementById('city_box');
 
-        console.log(top_id)
+        //console.log(top_id)
 
         //city_box.style.display = 'none';
         city_box.style.height = '60vh';
