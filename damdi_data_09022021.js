@@ -1201,7 +1201,12 @@ function first_rest(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1272,7 +1277,13 @@ function showNextREST_allSectors(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['rest2GIS'];
+    
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1350,7 +1361,12 @@ function showNextREST_SectorAUE(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1428,7 +1444,12 @@ function showNextREST_SectorALM(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1506,7 +1527,12 @@ function showNextREST_SectorBOS(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1584,7 +1610,12 @@ function showNextREST_SectorTUR(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1662,7 +1693,12 @@ function showNextREST_SectorJET(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1740,7 +1776,12 @@ function showNextREST_SectorMED(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1818,7 +1859,12 @@ function showNextREST_SectorNAU(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1896,7 +1942,12 @@ function showNextREST_SectorALA(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
@@ -1974,7 +2025,12 @@ function showNextREST_SectorILI(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    let new_rest_img = randomELEMENT['restIMG'];
+    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+    }
+    else{
+        let new_rest_img = randomELEMENT['restIMG'];
+    }
     console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
