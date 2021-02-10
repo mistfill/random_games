@@ -1363,23 +1363,32 @@ function first_rest(){
         console.log(randomELEMENT['restIMG'])
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        return new_rest_img
+        //console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let all_cafe_length = document.getElementById('all_cafe_lengh');
+        let allRESTARANS_length = allRESTARANS.length;
+        //console.log(allRESTARANS_length)
+        all_cafe_length.textContent = "Всего заведений в базе: " + allRESTARANS_length;
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        return new_rest_img
+        //console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let all_cafe_length = document.getElementById('all_cafe_lengh');
+        let allRESTARANS_length = allRESTARANS.length;
+        //console.log(allRESTARANS_length)
+        all_cafe_length.textContent = "Всего заведений в базе: " + allRESTARANS_length;
     }
-    //console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-    
-    let all_cafe_length = document.getElementById('all_cafe_lengh');
-    let allRESTARANS_length = allRESTARANS.length;
-    //console.log(allRESTARANS_length)
-    all_cafe_length.textContent = "Всего заведений в базе: " + allRESTARANS_length;
 }
 
 window.onload = first_rest;
@@ -1443,29 +1452,51 @@ function showNextREST_allSectors(){
     
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorAUE
@@ -1526,29 +1557,51 @@ function showNextREST_SectorAUE(){
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorALM
@@ -1609,29 +1662,51 @@ function showNextREST_SectorALM(){
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorBOS
@@ -1692,29 +1767,51 @@ function showNextREST_SectorBOS(){
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorTUR
@@ -1775,29 +1872,51 @@ function showNextREST_SectorTUR(){
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorJET
@@ -1857,30 +1976,52 @@ function showNextREST_SectorJET(){
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
-        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
+        
+         console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorMED
@@ -1940,30 +2081,52 @@ function showNextREST_SectorMED(){
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
-        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorNAU
@@ -2023,30 +2186,52 @@ function showNextREST_SectorNAU(){
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
-        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorALA
@@ -2106,30 +2291,52 @@ function showNextREST_SectorALA(){
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
-        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 //SectorILI
@@ -2189,30 +2396,52 @@ function showNextREST_SectorILI(){
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
-        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        console.log(new_rest_img)
+        rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
+
+        let popup_img = document.getElementById('popup_img');
+        popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
+
+        let last_rest_title = rest_title.textContent;
+        let last_rest_img = rest_img.style.backgroundImage;
+        /*let last_all_text_info = all_text_info.textContent;*/
+        let last_rest_price = rest_price.textContent;
+        let last_rest_kitch = rest_kitch.textContent;
+        let last_rest_time = rest_time.textContent;
+        let last_rest_adress = rest_adress.textContent;
+        let last_button_INSTA_link = button_INSTA_link.href;
+        let last_button_2GIS_link = button_2GIS_link.href;
+        let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
+        last_all_rest.push(last_rest)
+
+        console.log(last_all_rest)
     }
-    console.log(new_rest_img)
-    rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
     
-    let popup_img = document.getElementById('popup_img');
-    popup_img.style.backgroundImage = 'url(' + new_rest_img + ')';
-
-    let last_rest_title = rest_title.textContent;
-    let last_rest_img = rest_img.style.backgroundImage;
-    /*let last_all_text_info = all_text_info.textContent;*/
-    let last_rest_price = rest_price.textContent;
-    let last_rest_kitch = rest_kitch.textContent;
-    let last_rest_time = rest_time.textContent;
-    let last_rest_adress = rest_adress.textContent;
-    let last_button_INSTA_link = button_INSTA_link.href;
-    let last_button_2GIS_link = button_2GIS_link.href;
-    let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
-    last_all_rest.push(last_rest)
-
-    console.log(last_all_rest)
 };
 
 
