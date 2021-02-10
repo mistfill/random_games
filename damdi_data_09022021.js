@@ -1179,40 +1179,40 @@ function createSectorAUE(){
     while(restID<allRESTARANS_length){
         let restNOW = allRESTARANS_allTIME[restID];
         //console.log(restNOW)
-        if (restNOW.restSector == "Ауэзовский"){
+        if (restNOW.restSector == "Ауэзовский" || restNOW.restSector == "Ауэзовский район"){
             //console.log(restNOW)
             SectorAUE.push(restNOW)
             //console.log(SectorAUE)
         }
-        else if (restNOW.restSector == "Алмалинский"){
+        else if (restNOW.restSector == "Алмалинский" || restNOW.restSector == "Алмалинский район"){
             SectorALM.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Бостандыкский"){
+        else if (restNOW.restSector == "Бостандыкский" || restNOW.restSector == "Бостандыкский район"){
             SectorBOS.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Турксибский"){
+        else if (restNOW.restSector == "Турксибский" || restNOW.restSector == "Турксибский район"){
             SectorTUR.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Жетысуский"){
+        else if (restNOW.restSector == "Жетысуский" || restNOW.restSector == "Жетысуский район"){
             SectorJET.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Медеуский"){
+        else if (restNOW.restSector == "Медеуский" || restNOW.restSector == "Медеуский район"){
             SectorMED.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Наурызбайский"){
+        else if (restNOW.restSector == "Наурызбайский" || restNOW.restSector == "Наурызбайский район"){
             SectorNAU.push(restNOW)
             //console.log(SectorNAU)
         }
-        else if (restNOW.restSector == "Алатауский"){
+        else if (restNOW.restSector == "Алатауский" || restNOW.restSector == "Алатауский район"){
             SectorALA.push(restNOW)
             //console.log(SectorALM)
         }
-        else if (restNOW.restSector == "Илийский"){
+        else if (restNOW.restSector == "Илийский" || restNOW.restSector == "Илийский район"){
             SectorILI.push(restNOW)
             //console.log(SectorALM)
         }
