@@ -1137,7 +1137,7 @@ let allRESTARANS = [{'id': '1', 'restNAME': 'Чайхана NAVAT на Сейф�
 {'id': 442, 'restNAME': "Luna16/20", 'restPRICE': "Средний чек: 3000 тенге", 'restKITCH': "Кухни: европейская", 'restADRES': "​Достык проспект, 91Б", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/vukvw", 'restINSTA': "https://www.instagram.com/luna_16.20/", 'restTIME': "Время работы: 10:00 до 23:00", 'restTimeOpen': "10:00", 'restTimeClose': "23:00", 'restIMG': "damdiLOGO"},
 {'id': 443, 'restNAME': "Ньютон", 'restPRICE': "Средний чек: 600 - 1500 тенге", 'restKITCH': "Кухни: кофейня-кондитерская", 'restADRES': "​Ньютона, 1", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/c13nl", 'restINSTA': "https://www.instagram.com/coffee.newton/", 'restTIME': "Время работы: 08:00 до 20:00", 'restTimeOpen': "08:00", 'restTimeClose': "20:00", 'restIMG': "https://thumb.tildacdn.com/tild6466-6134-4630-a439-613737396339/-/format/webp/photo_2020-10-15_190.jpeg"},
 {'id': 444, 'restNAME': "ПИОНЕР restaurant & cafe", 'restPRICE': "Средний чек: 10000 тенге", 'restKITCH': "Кухни: авторская, европейская, паназиатская, средиземноморская, рыбная", 'restADRES': "Достык проспект, 132", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/on41q", 'restINSTA': "https://www.instagram.com/pioner3.14/", 'restTIME': "Время работы: 09:30 до 22:45", 'restTimeOpen': "09:30", 'restTimeClose': "22:45", 'restIMG': "https://thumb.tildacdn.com/tild3462-3435-4165-b137-316539623034/-/format/webp/photo_2020-10-15_215.jpeg"},
-{'id': 445, 'restNAME': "Montpensier coffee", 'restPRICE': "Средний чек: Уточняйте по телефону: + 7 702 486 6596", 'restKITCH': "Кухни: https://thumb.tildacdn.com/tild6165-3436-4264-b134-313933653635/-/format/webp/photo_2020-10-16_090.jpeg", 'restADRES': "Самал 1-й микрорайон, 4", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/si3ks0", 'restINSTA': "https://www.instagram.com/montpensier.lounge/", 'restTIME': "Время работы: 00:00 до 00:00", 'restTimeOpen': "00:00", 'restTimeClose': "00:00", 'restIMG': "https://thumb.tildacdn.com/tild6165-3436-4264-b134-313933653635/-/format/webp/photo_2020-10-16_090.jpeg"},
+{'id': 445, 'restNAME': "Montpensier coffee (закрыт)", 'restPRICE': "Средний чек: Уточняйте по телефону: + 7 702 486 6596", 'restKITCH': "Кухни: ", 'restADRES': "Самал 1-й микрорайон, 4", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/si3ks0", 'restINSTA': "https://www.instagram.com/montpensier.lounge/", 'restTIME': "Время работы: 00:00 до 00:00", 'restTimeOpen': "00:00", 'restTimeClose': "00:00", 'restIMG': "https://thumb.tildacdn.com/tild6165-3436-4264-b134-313933653635/-/format/webp/photo_2020-10-16_090.jpeg"},
 {'id': 446, 'restNAME': "MADO", 'restPRICE': "Средний чек: 3000 - 5000 тенге", 'restKITCH': "Кухни: европейская, турецкая, детская, вегетарианская", 'restADRES': "Самал 2-й микрорайон, 111", 'restSector':"Медеуский", 'rest2GIS': "https://go.2gis.com/u40x24", 'restINSTA': "https://www.instagram.com/mado.almaty/", 'restTIME': "Время работы: 08:00 до 23:00", 'restTimeOpen': "08:00", 'restTimeClose': "23:00", 'restIMG': "https://thumb.tildacdn.com/tild6131-3638-4630-a639-363532393133/-/format/webp/photo_2020-10-16_090.jpeg"},
 {'id': 447, 'restNAME': "Наш Казахфильм", 'restPRICE': "Средний чек: 1700 тенге", 'restKITCH': "Кухни: восточная, еврейская, казахская, узбекская, уйгурская", 'restADRES': "Мартебе, 1а", 'restSector':"Бостандыкский", 'rest2GIS': "https://go.2gis.com/bkf1l", 'restINSTA': "https://instagram.com/kazakhfilm_cafe", 'restTIME': "Время работы: 10:00 до 23:00", 'restTimeOpen': "10:00", 'restTimeClose': "23:00", 'restIMG': "https://www.instagram.com/p/Bx9Qbr0ge6U/?igshid=eqg1pwuhzpc9"},
 {'id': 448, 'restNAME': "Imone", 'restPRICE': "Средний чек: 3000 тенге", 'restKITCH': "Кухни: корейская", 'restADRES': "Казахфильм микрорайон, 21в", 'restSector':"Бостандыкский", 'rest2GIS': "https://go.2gis.com/vgst3", 'restINSTA': "", 'restTIME': "Время работы: 09:30 до 22:00", 'restTimeOpen': "09:30", 'restTimeClose': "22:00", 'restIMG': "damdiLOGO"},
@@ -1175,7 +1175,7 @@ allRESTARANS_allTIME = allRESTARANS;
 function createSectorAUE(){
     let allRESTARANS_length = allRESTARANS_allTIME.length;
 
-    console.log(allRESTARANS_allTIME)
+    //console.log(allRESTARANS_allTIME)
     while(restID<allRESTARANS_length){
         let restNOW = allRESTARANS_allTIME[restID];
         //console.log(restNOW)
@@ -1233,7 +1233,7 @@ function changeSector(){
 
     SectorValue = form.sector_s.value;
 
-    console.log(SectorValue)
+    //console.log(SectorValue)
     
     showNextREST()
     
@@ -1252,13 +1252,13 @@ function changeSector(){
 function check_OpenValue(){
     
     if(OpenValue == "openOff"){
-        console.log(OpenValue)
+        //console.log(OpenValue)
         showNextREST()
 
         let OpenValue = "openOn";
     }
     else if (OpenValue == "openOn"){
-        console.log(OpenValue)
+        //console.log(OpenValue)
 
         showNextREST()
         let OpenValue = "openOff";
@@ -1268,7 +1268,7 @@ function check_OpenValue(){
 //запуск по кнопке в зависимости от выбранного района
 
 function showNextREST(){
-    console.log(SectorValue)
+    //console.log(SectorValue)
     if (SectorValue == "all"){
         showNextREST_allSectors()
     }
@@ -1304,7 +1304,7 @@ function showNextREST(){
 
 let last_all_rest = [];
 
-console.log('allRESTARANS connected')
+//console.log('allRESTARANS connected')
 
 //функция случайного результата
 function getRandomElement(arr_rgd) {
@@ -1318,7 +1318,7 @@ function first_rest(){
     let randomELEMENT = getRandomElement(allRESTARANS);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
 
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
@@ -1403,27 +1403,27 @@ function showNextREST_allSectors(){
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1437,7 +1437,7 @@ function showNextREST_allSectors(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1445,7 +1445,7 @@ function showNextREST_allSectors(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
@@ -1453,7 +1453,7 @@ function showNextREST_allSectors(){
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1471,12 +1471,12 @@ function showNextREST_allSectors(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+       // console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1494,7 +1494,7 @@ function showNextREST_allSectors(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -1505,31 +1505,31 @@ function showNextREST_SectorAUE(){
     let randomELEMENT = getRandomElement(SectorAUE);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1543,7 +1543,7 @@ function showNextREST_SectorAUE(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1551,14 +1551,14 @@ function showNextREST_SectorAUE(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1576,12 +1576,12 @@ function showNextREST_SectorAUE(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+       // console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1599,7 +1599,7 @@ function showNextREST_SectorAUE(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -1610,31 +1610,31 @@ function showNextREST_SectorALM(){
     let randomELEMENT = getRandomElement(SectorALM);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1648,7 +1648,7 @@ function showNextREST_SectorALM(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1656,14 +1656,14 @@ function showNextREST_SectorALM(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1681,12 +1681,12 @@ function showNextREST_SectorALM(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1704,7 +1704,7 @@ function showNextREST_SectorALM(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -1715,31 +1715,31 @@ function showNextREST_SectorBOS(){
     let randomELEMENT = getRandomElement(SectorBOS);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1753,7 +1753,7 @@ function showNextREST_SectorBOS(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1761,14 +1761,14 @@ function showNextREST_SectorBOS(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1786,12 +1786,12 @@ function showNextREST_SectorBOS(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1809,7 +1809,7 @@ function showNextREST_SectorBOS(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -1820,31 +1820,31 @@ function showNextREST_SectorTUR(){
     let randomELEMENT = getRandomElement(SectorTUR);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1858,7 +1858,7 @@ function showNextREST_SectorTUR(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1866,14 +1866,14 @@ function showNextREST_SectorTUR(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1891,12 +1891,12 @@ function showNextREST_SectorTUR(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1914,7 +1914,7 @@ function showNextREST_SectorTUR(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -1925,31 +1925,31 @@ function showNextREST_SectorJET(){
     let randomELEMENT = getRandomElement(SectorJET);
 
     let new_rest_sector = randomELEMENT.restSector;
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -1963,7 +1963,7 @@ function showNextREST_SectorJET(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -1971,14 +1971,14 @@ function showNextREST_SectorJET(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
         
-         console.log(new_rest_img)
+         //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -1996,12 +1996,12 @@ function showNextREST_SectorJET(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2019,7 +2019,7 @@ function showNextREST_SectorJET(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -2030,31 +2030,31 @@ function showNextREST_SectorMED(){
     let randomELEMENT = getRandomElement(SectorMED);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -2068,7 +2068,7 @@ function showNextREST_SectorMED(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -2076,14 +2076,14 @@ function showNextREST_SectorMED(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2101,12 +2101,12 @@ function showNextREST_SectorMED(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2124,7 +2124,7 @@ function showNextREST_SectorMED(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -2135,31 +2135,31 @@ function showNextREST_SectorNAU(){
     let randomELEMENT = getRandomElement(SectorNAU);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -2173,7 +2173,7 @@ function showNextREST_SectorNAU(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -2181,14 +2181,14 @@ function showNextREST_SectorNAU(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2206,12 +2206,12 @@ function showNextREST_SectorNAU(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2229,7 +2229,7 @@ function showNextREST_SectorNAU(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -2240,31 +2240,31 @@ function showNextREST_SectorALA(){
     let randomELEMENT = getRandomElement(SectorALA);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -2278,7 +2278,7 @@ function showNextREST_SectorALA(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -2286,14 +2286,14 @@ function showNextREST_SectorALA(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2311,12 +2311,12 @@ function showNextREST_SectorALA(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2334,7 +2334,7 @@ function showNextREST_SectorALA(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -2345,31 +2345,31 @@ function showNextREST_SectorILI(){
     let randomELEMENT = getRandomElement(SectorILI);
 
     let new_rest_sector = randomELEMENT['restSector'];
-    console.log(new_rest_sector)
+    //console.log(new_rest_sector)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = randomELEMENT['restNAME'];
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = randomELEMENT['restPRICE'];
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = randomELEMENT['restKITCH'];
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = randomELEMENT['restTIME'];
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = randomELEMENT['restADRES'];
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
     
 
@@ -2383,7 +2383,7 @@ function showNextREST_SectorILI(){
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = randomELEMENT['restINSTA'];
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -2391,14 +2391,14 @@ function showNextREST_SectorILI(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = randomELEMENT['rest2GIS'];
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     if(randomELEMENT['restIMG'] === 'damdiLOGO'){
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png';
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2416,12 +2416,12 @@ function showNextREST_SectorILI(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
         
-        console.log(new_rest_img)
+        //console.log(new_rest_img)
         rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
 
         let popup_img = document.getElementById('popup_img');
@@ -2439,7 +2439,7 @@ function showNextREST_SectorILI(){
         let last_rest = {restNAME: last_rest_title, restIMG: last_rest_img, restINSTA: last_button_INSTA_link, rest2GIS: last_button_2GIS_link, restPRICE: last_rest_price, restKITCH: last_rest_kitch, restTIME: last_rest_time, restADRES: last_rest_adress};
         last_all_rest.push(last_rest)
 
-        console.log(last_all_rest)
+        //console.log(last_all_rest)
     }
     
 };
@@ -2453,14 +2453,14 @@ function showNextREST_SectorILI(){
 function BackButton(){
 
     let last_rest_id = last_all_rest.length;
-    console.log(last_rest_id)
+    //console.log(last_rest_id)
     
     let last_rest = last_all_rest[last_rest_id - 2];
-    console.log(last_rest)
+    //console.log(last_rest)
     
     let rest_title = document.getElementById('rest_name');
     let new_rest_title = last_rest.restNAME;
-    console.log(new_rest_title)
+    //console.log(new_rest_title)
     rest_title.textContent = new_rest_title;
 
     /*
@@ -2472,27 +2472,27 @@ function BackButton(){
 
     let rest_price = document.getElementById('rest_price_text');
     let new_rest_price = last_rest.restPRICE;
-    console.log(new_rest_price)
+    //console.log(new_rest_price)
     rest_price.textContent = new_rest_price;
 
     let rest_kitch = document.getElementById('rest_kitch_text');
     let new_rest_kitch = last_rest.restKITCH;
-    console.log(new_rest_kitch)
+    //console.log(new_rest_kitch)
     rest_kitch.textContent = new_rest_kitch;
 
     let rest_time = document.getElementById('rest_time_text');
     let new_rest_time = last_rest.restTIME;
-    console.log(new_rest_time)
+    //console.log(new_rest_time)
     rest_time.textContent = new_rest_time;
 
     let rest_adress = document.getElementById('rest_adres_text');
     let new_rest_adress = last_rest.restADRES;
-    console.log(new_rest_adress)
+    //console.log(new_rest_adress)
     rest_adress.textContent = new_rest_adress;
 
     let button_INSTA_link = document.getElementById('rest_insta_text');
     let new_button_INSTA_link = last_rest.restINSTA;
-    console.log(new_button_INSTA_link)
+    //console.log(new_button_INSTA_link)
     button_INSTA_link.href = new_button_INSTA_link;
     
     //let rest_img_link = document.querySelector('.rest_img_link');
@@ -2500,12 +2500,12 @@ function BackButton(){
 
     let button_2GIS_link = document.getElementById('rest_adres_text');
     let new_button_2GIS_link = last_rest.rest2GIS;
-    console.log(new_button_2GIS_link)
+    //console.log(new_button_2GIS_link)
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
     let new_rest_img = last_rest.restIMG;
-    console.log(new_rest_img)
+    //console.log(new_rest_img)
     rest_img.style.backgroundImage = new_rest_img;
     
     let popup_img = document.getElementById('popup_img');
