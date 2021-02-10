@@ -1359,11 +1359,16 @@ function first_rest(){
     button_2GIS_link.href = new_button_2GIS_link;
 
     let rest_img = document.querySelector('.rest_img');
-    if(randomELEMENT['restIMG'] === 'damdiLOGO'){
+    if(randomELEMENT['restIMG'] == 'damdiLOGO'){
+        console.log(randomELEMENT['restIMG'])
         let new_rest_img = 'https://static.tildacdn.com/tild3563-6138-4939-b961-633134393931/__2020-08-27__220707.png'
+        
+        return new_rest_img
     }
     else{
         let new_rest_img = randomELEMENT['restIMG'];
+        
+        return new_rest_img
     }
     //console.log(new_rest_img)
     rest_img.style.backgroundImage = "url(" + new_rest_img + ")";
